@@ -10,10 +10,12 @@ export const CSharp = () => {
 };
 
 export const CSS = () => {
-  <ListImage
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-    alt="css icon"
-  />;
+  return (
+    <ListImage
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      alt="css icon"
+    />
+  );
 };
 
 export const Express = () => {
