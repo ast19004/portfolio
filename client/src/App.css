@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+.decorative {
+  font-family: "Uncial Antiqua", cursive;
+}
+
+li {
+  list-style: none;
+}
+
 .App {
   text-align: center;
   margin: 2%;
@@ -17,6 +26,9 @@
 .intro {
   align-self: end;
 }
+.intro h1 {
+  font-size: 48px;
+}
 .bottomNav {
   padding: 0;
   align-self: end;
@@ -30,7 +42,8 @@
 }
 .scrollIcon {
   display: block;
-  border: 1px solid gray;
+  color: rgba(50, 50, 50, 0.9);
+  border: 1px solid rgba(50, 50, 50, 0.4);
   border-radius: 5px;
   padding: 5px;
 }

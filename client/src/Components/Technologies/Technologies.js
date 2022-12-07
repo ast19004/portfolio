@@ -1,6 +1,7 @@
 import styles from "./Techonolgies.module.css";
 import {
   CSharp,
+  CSS,
   Express,
   GitHub,
   HTML5,
@@ -8,6 +9,7 @@ import {
   Javascript,
   MongoDb,
   MySQL,
+  Nodejs,
   PHP,
   Python,
   React,
@@ -18,6 +20,7 @@ const Technologies = () => {
   return (
     <ul className={styles.iconList}>
       <CSharp />
+      <CSS />
       <Express />
       <GitHub />
       <HTML5 />
@@ -25,6 +28,7 @@ const Technologies = () => {
       <Javascript />
       <MongoDb />
       <MySQL />
+      <Nodejs />
       <PHP />
       <Python />
       <React />

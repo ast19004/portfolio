@@ -5,6 +5,9 @@
   border: 1px solid gray;
   cursor: pointer;
 }
+.button:hover {
+  background-color: rgba(50, 50, 50, 0.15);
+}
 .rounded {
   border-radius: 20px;
 }

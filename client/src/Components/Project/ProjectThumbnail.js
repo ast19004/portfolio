@@ -6,8 +6,9 @@ const ProjectThumbnail = (props) => {
           marginTop: "60px",
           width: "300px",
           height: "300px",
-          border: "1px solid gray",
-          background: "#888",
+          border: "1px solid rgba(50, 50, 50, 0.3)",
+          background: "rgba(50, 50, 50, 0.2)",
+          borderRadius: "10px",
         }}
       >
         ProjectThumbnail

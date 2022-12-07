@@ -6,7 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import Projects from "./Components/Project/Projects";
-import Technologies from "./Technologies/Technologies";
+import Technologies from "./Components/Technologies/Technologies";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <div className="App-welcome">
         <section className="intro">
-          <h1>Anna Astle</h1>
+          <h1 className="decorative">Anna Astle</h1>
           <span>WEB DEVELOPER</span>
         </section>
         <ul className={"bottomNav"}>

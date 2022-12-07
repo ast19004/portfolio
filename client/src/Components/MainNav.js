@@ -5,7 +5,7 @@ const MainNav = () => {
   return (
     <Nav>
       <Button href="#" variant="rounded">
-        <b>A</b> WEB DEV
+        <b className="decorative">A</b> WEB DEV
       </Button>
 
       <NavRightContainer>

@@ -1,4 +1,4 @@
-import ListImage from "../Components/ListImage";
+import ListImage from "../ListImage";
 
 export const CSharp = () => {
   return (
@@ -7,6 +7,13 @@ export const CSharp = () => {
       alt="c sharp icon"
     />
   );
+};
+
+export const CSS = () => {
+  <ListImage
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    alt="css icon"
+  />;
 };
 
 export const Express = () => {
@@ -53,7 +60,7 @@ export const Javascript = () => {
 export const MongoDb = () => {
   return (
     <ListImage
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
       alt="MongoDb Icon"
     />
   );
@@ -63,6 +70,15 @@ export const MySQL = () => {
     <ListImage
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
       alt="SQL Icon"
+    />
+  );
+};
+
+export const Nodejs = () => {
+  return (
+    <ListImage
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+      alt="node.js icon"
     />
   );
 };
