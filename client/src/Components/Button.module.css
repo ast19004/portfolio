@@ -1,0 +1,16 @@
+.button {
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+.rounded {
+  border-radius: 20px;
+}
+.rounded-left {
+  border-radius: 20px 0 0 20px;
+}
+
+.rounded-right {
+  border-radius: 0 20px 20px 0;
+}
