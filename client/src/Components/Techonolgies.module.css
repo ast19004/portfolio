@@ -1,10 +1,13 @@
 .iconList {
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 .iconList li {
   list-style: none;
+  grid-row: 1/2;
 }
 .iconList li img {
   height: 48px;
