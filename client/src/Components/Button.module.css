@@ -3,6 +3,7 @@
   height: 40px;
   padding: 10px;
   border: 1px solid gray;
+  cursor: pointer;
 }
 .rounded {
   border-radius: 20px;

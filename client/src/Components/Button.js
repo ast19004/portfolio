@@ -7,7 +7,14 @@ const Button = (props) => {
   const classes = `${styles.button} ${variant} ${propClasses}`;
 
   return (
-    <button type="button" className={classes}>
+    <button
+      type="button"
+      className={classes}
+      onClick={(e) => {
+        e.preventDefault();
+        window.location.href = props.href;
+      }}
+    >
       {props.children}
     </button>
   );

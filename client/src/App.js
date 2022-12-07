@@ -6,7 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import Projects from "./Components/Project/Projects";
-import Technologies from "./Components/Technologies";
+import Technologies from "./Technologies/Technologies";
 
 function App() {
   return (

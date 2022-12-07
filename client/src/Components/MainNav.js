@@ -4,14 +4,18 @@ import Button from "./Button";
 const MainNav = () => {
   return (
     <Nav>
-      <Button variant="rounded">
+      <Button href="#" variant="rounded">
         <b>A</b> WEB DEV
       </Button>
 
       <NavRightContainer>
-        <Button variant="rounded-left">ABOUT</Button>
-        <Button>PROJECTS</Button>
-        <Button variant="rounded-right">CONTACT</Button>
+        <Button href="#about" variant="rounded-left">
+          ABOUT
+        </Button>
+        <Button href="#projects">PROJECTS</Button>
+        <Button href="#contact" variant="rounded-right">
+          CONTACT
+        </Button>
       </NavRightContainer>
     </Nav>
   );
