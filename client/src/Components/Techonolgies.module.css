@@ -1,0 +1,12 @@
+.iconList {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.iconList li {
+  list-style: none;
+}
+.iconList li img {
+  height: 48px;
+  width: auto;
+}

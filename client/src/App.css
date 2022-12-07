@@ -10,7 +10,8 @@
 
 .App-welcome {
   display: grid;
-  height: 550px;
+  min-height: 96vh;
+  max-height: 550px;
 }
 
 .intro {

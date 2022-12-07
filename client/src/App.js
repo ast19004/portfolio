@@ -5,6 +5,8 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+import Technologies from "./Components/Technologies";
+
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,7 @@ function App() {
           </li>
         </ul>
       </div>
+      <Technologies />
     </div>
   );
 }
