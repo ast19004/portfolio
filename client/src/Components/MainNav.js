@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import Button from "./Button";
 
+import MainLogo from "./MainLogo";
+
 const MainNav = () => {
   return (
     <Nav>
       <Button href="#" variant="rounded">
-        <b className="decorative">A</b> WEB DEV
+        <MainLogo /> WEB DEV
       </Button>
 
       <NavRightContainer>

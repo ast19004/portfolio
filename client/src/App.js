@@ -7,16 +7,20 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import Projects from "./Components/Project/Projects";
 import Technologies from "./Components/Technologies/Technologies";
+import MainLogo from "./Components/MainLogo";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <div className="App-welcome">
-        <section className="intro">
-          <h1 className="decorative">Anna Astle</h1>
-          <span>WEB DEVELOPER</span>
-        </section>
+        <div className="intro">
+          <section>
+            <h1 className="decorative">Anna Astle</h1>
+            <span>WEB DEVELOPER</span>
+          </section>
+          <MainLogo className="App-logo" fontSize="250px" />
+        </div>
         <ul className={"bottomNav"}>
           <li onClick={() => (window.location.href = "#projects")}>
             <ArrowDownwardIcon className="scrollIcon" />
