@@ -39,11 +39,11 @@ function App() {
           </li>
         </ul>
       </div>
-      <hr class="page-break" id="projects"></hr>
+      <hr className="page-break" id="projects"></hr>
       <Projects />
-      <hr class="page-break" id="about"></hr>
+      <hr className="page-break" id="about"></hr>
       <Technologies />
-      <hr class="page-break" id="contact"></hr>
+      <hr className="page-break" id="contact"></hr>
     </div>
   );
 }
