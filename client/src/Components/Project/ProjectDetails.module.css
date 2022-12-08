@@ -1,5 +1,10 @@
 .project-details {
   max-width: 100%;
-  width: 40%;
   text-align: left;
+}
+
+@media (min-width: 800px) {
+  .project-details {
+    width: 40%;
+  }
 }

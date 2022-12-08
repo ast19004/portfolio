@@ -1,5 +1,10 @@
 .project {
-  display: flex;
-  justify-content: space-between;
   margin: 100px;
+}
+
+@media (min-width: 800px) {
+  .project {
+    display: flex;
+    justify-content: space-between;
+  }
 }

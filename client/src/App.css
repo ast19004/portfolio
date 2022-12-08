@@ -2,6 +2,9 @@
 .decorative {
   font-family: "Uncial Antiqua", cursive;
 }
+.page-break {
+  opacity: 0.25;
+}
 
 li {
   list-style: none;
