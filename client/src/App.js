@@ -18,7 +18,7 @@ function App() {
           <span>WEB DEVELOPER</span>
         </section>
         <ul className={"bottomNav"}>
-          <li>
+          <li onClick={() => (window.location.href = "#projects")}>
             <ArrowDownwardIcon className="scrollIcon" />
           </li>
           <li className="links">
