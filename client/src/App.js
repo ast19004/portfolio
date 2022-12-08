@@ -19,7 +19,7 @@ function App() {
             <h1 className="decorative">Anna Astle</h1>
             <span>WEB DEVELOPER</span>
           </section>
-          <MainLogo className="App-logo" fontSize="250px" />
+          <MainLogo className="App-logo" />
         </div>
         <ul className={"bottomNav"}>
           <li onClick={() => (window.location.href = "#projects")}>
@@ -31,14 +31,14 @@ function App() {
               rel="noreferrer"
               target="_blank"
             >
-              <LinkedInIcon />
+              <LinkedInIcon color="action" />
             </a>
             <a
               href="https://github.com/ast19004"
               rel="noreferrer"
               target="_blank"
             >
-              <GitHubIcon />
+              <GitHubIcon color="action" />
             </a>
           </li>
         </ul>

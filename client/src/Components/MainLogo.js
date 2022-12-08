@@ -1,11 +1,7 @@
 const MainLogo = (props) => {
   const classes = props.className ? props.className : "";
-  const fontSize = props.fontSize ? props.fontSize : "inherit";
-  return (
-    <b className={`decorative ${classes}`} style={{ fontSize: fontSize }}>
-      A
-    </b>
-  );
+
+  return <b className={`decorative ${classes}`}>A</b>;
 };
 
 export default MainLogo;

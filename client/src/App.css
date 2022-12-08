@@ -18,11 +18,17 @@ li {
 .App-logo {
   position: absolute;
   top: 30vh;
-  left: 48vh;
-  height: 40vmin;
+  left: 35vw;
+  /* height: 40vmin; */
+  font-size: 200px;
   pointer-events: none;
-  color: rgba(172, 255, 47, 0.51);
+  color: rgba(172, 255, 47, 0.45);
   z-index: -1;
+}
+@media (min-height: 450px) {
+  .App-logo {
+    font-size: 250px;
+  }
 }
 
 .App-welcome {
