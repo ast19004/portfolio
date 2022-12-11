@@ -5,6 +5,15 @@
 .page-break {
   opacity: 0.25;
 }
+.gray {
+  color: #555;
+}
+.font-medium {
+  font-size: 36px;
+}
+.font-large {
+  font-size: 60px;
+}
 
 li {
   list-style: none;
@@ -22,7 +31,8 @@ li {
   /* height: 40vmin; */
   font-size: 200px;
   pointer-events: none;
-  color: rgba(172, 255, 47, 0.45);
+  color: rgba(50, 50, 50, 0.15);
+  /* color: rgba(172, 255, 47, 0.45); */
   z-index: -1;
 }
 @media (min-height: 450px) {
@@ -40,9 +50,11 @@ li {
 .intro {
   align-self: end;
 }
-.intro section h1 {
-  font-size: 48px;
+
+.intro h1 {
+  margin-bottom: 0;
 }
+
 .bottomNav {
   padding: 0;
   align-self: end;

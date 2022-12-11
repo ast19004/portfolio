@@ -16,7 +16,7 @@ function App() {
       <div className="App-welcome">
         <div className="intro">
           <section>
-            <h1 className="decorative">Anna Astle</h1>
+            <h1 className="decorative font-large">Anna Astle</h1>
             <span>WEB DEVELOPER</span>
           </section>
           <MainLogo className="App-logo" />

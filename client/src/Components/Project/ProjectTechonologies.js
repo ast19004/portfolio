@@ -13,7 +13,7 @@ const TechContainer = styled.ul`
   padding: 0;
   max-width: fit-content;
   height: 25px;
-  padding: 10px;
+  /* padding: 10px;
   border: 1px solid rgba(50, 50, 50, 0.2);
-  border-radius: 20px;
+  border-radius: 20px; */
 `;

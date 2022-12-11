@@ -1,6 +1,9 @@
 .project {
   margin: 100px;
 }
+.project:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
 
 @media (min-width: 800px) {
   .project {
