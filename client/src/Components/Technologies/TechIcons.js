@@ -3,6 +3,7 @@ import ListImage from "../ListImage";
 export const CSharp = () => {
   return (
     <ListImage
+      opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
       alt="c sharp icon"
     />
@@ -12,6 +13,7 @@ export const CSharp = () => {
 export const CSS = () => {
   return (
     <ListImage
+      opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
       alt="css icon"
     />
@@ -21,6 +23,7 @@ export const CSS = () => {
 export const Express = () => {
   return (
     <ListImage
+      opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
       alt="express icon"
     />
@@ -30,6 +33,7 @@ export const Express = () => {
 export const GitHub = () => {
   return (
     <ListImage
+      opacity="35%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
       alt="git icon"
     />
@@ -38,6 +42,7 @@ export const GitHub = () => {
 export const HTML5 = () => {
   return (
     <ListImage
+      opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
       alt="HTML icon"
     />
@@ -46,6 +51,7 @@ export const HTML5 = () => {
 export const Java = () => {
   return (
     <ListImage
+      opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"
       alt="Java Icon"
     />
@@ -62,6 +68,7 @@ export const Javascript = () => {
 export const MongoDb = () => {
   return (
     <ListImage
+      opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
       alt="MongoDb Icon"
     />
@@ -70,6 +77,7 @@ export const MongoDb = () => {
 export const MySQL = () => {
   return (
     <ListImage
+      opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
       alt="SQL Icon"
     />
@@ -87,6 +95,7 @@ export const Nodejs = () => {
 export const PHP = () => {
   return (
     <ListImage
+      opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
       alt="PHP icon"
     />
@@ -111,6 +120,7 @@ export const React = () => {
 export const Sass = () => {
   return (
     <ListImage
+      opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
       alt="Sass Icon"
     />
