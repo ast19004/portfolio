@@ -18,13 +18,33 @@ import {
   React,
   Sass,
 } from "../Technologies/TechIcons";
+
+import readerReaderImg from "../../assets/images/readreader.jpg";
+import scootzImg from "../../assets/images/scootz.jpg";
+
 const Projects = () => {
   return (
     <div className={styles.projects}>
       <Project
         title="Read Reader"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus. Etiam erat velit scelerisque in dictum non consectetur a erat. Arcu bibendum at varius vel pharetra vel turpis nunc. Risus sed vulputate odio ut enim. Sed libero enim sed faucibus turpis in. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nunc id cursus metus aliquam. Elementum nibh tellus molestie nunc non."
-        url="https://www.google.com"
+        href="https://www.google.com"
+        src={readerReaderImg}
+        alt="Link to Read Reader Application"
+      >
+        <React />
+        <CSS />
+        <Express />
+        <Nodejs />
+        <MongoDb />
+      </Project>
+
+      <Project
+        title="Read Reader"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus. Etiam erat velit scelerisque in dictum non consectetur a erat. Arcu bibendum at varius vel pharetra vel turpis nunc. Risus sed vulputate odio ut enim. Sed libero enim sed faucibus turpis in. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nunc id cursus metus aliquam. Elementum nibh tellus molestie nunc non."
+        href="https://www.google.com"
+        src={scootzImg}
+        alt="Link to Scootz Application"
       >
         <React />
         <CSS />
@@ -37,6 +57,8 @@ const Projects = () => {
         title="Read Reader"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus. Etiam erat velit scelerisque in dictum non consectetur a erat. Arcu bibendum at varius vel pharetra vel turpis nunc. Risus sed vulputate odio ut enim. Sed libero enim sed faucibus turpis in. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nunc id cursus metus aliquam. Elementum nibh tellus molestie nunc non."
         url="https://www.google.com"
+        src={readerReaderImg}
+        alt="Link to Read Reader Application"
       >
         <React />
         <CSS />
@@ -49,18 +71,8 @@ const Projects = () => {
         title="Read Reader"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus. Etiam erat velit scelerisque in dictum non consectetur a erat. Arcu bibendum at varius vel pharetra vel turpis nunc. Risus sed vulputate odio ut enim. Sed libero enim sed faucibus turpis in. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nunc id cursus metus aliquam. Elementum nibh tellus molestie nunc non."
         url="https://www.google.com"
-      >
-        <React />
-        <CSS />
-        <Express />
-        <Nodejs />
-        <MongoDb />
-      </Project>
-
-      <Project
-        title="Read Reader"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus. Etiam erat velit scelerisque in dictum non consectetur a erat. Arcu bibendum at varius vel pharetra vel turpis nunc. Risus sed vulputate odio ut enim. Sed libero enim sed faucibus turpis in. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nunc id cursus metus aliquam. Elementum nibh tellus molestie nunc non."
-        url="https://www.google.com"
+        src={readerReaderImg}
+        alt="Link to Read Reader Application"
       >
         <React />
         <CSS />

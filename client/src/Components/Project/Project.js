@@ -11,7 +11,7 @@ const Project = (props) => {
         description={props.description}
         technologies={props.children}
       />
-      <ProjectThumbnail url={props.url} />
+      <ProjectThumbnail href={props.href} src={props.src} alt={props.alt} />
     </div>
   );
 };

@@ -1,17 +1,21 @@
 const ProjectThumbnail = (props) => {
   return (
-    <a href={props.url} target="_blank" rel="noreferrer">
+    <a href={props.href} target="_blank" rel="noreferrer">
       <div
         style={{
           marginTop: "60px",
-          width: "300px",
-          height: "300px",
+          width: "350px",
+          height: "350px",
           border: "1px solid rgba(50, 50, 50, 0.3)",
           background: "rgba(50, 50, 50, 0.2)",
           borderRadius: "10px",
         }}
       >
-        ProjectThumbnail
+        <img
+          src={props.src}
+          alt={props.alt}
+          style={{ maxWidth: "100%", maxHeight: "100%" }}
+        />
       </div>
     </a>
   );
