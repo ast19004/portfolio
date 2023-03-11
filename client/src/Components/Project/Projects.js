@@ -21,6 +21,8 @@ import {
 
 import readerReaderImg from "../../assets/images/readreader.jpg";
 import scootzImg from "../../assets/images/scootz.jpg";
+import brainstormImg from "../../assets/images/brainstorm.jpg";
+import emergenceUniversityImg from "../../assets/images/emergenceUniversity.jpg";
 
 const Projects = () => {
   return (
@@ -53,31 +55,27 @@ const Projects = () => {
       </Project>
 
       <Project
-        title="Read Reader"
+        title="Brain Storm"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus. Etiam erat velit scelerisque in dictum non consectetur a erat. Arcu bibendum at varius vel pharetra vel turpis nunc. Risus sed vulputate odio ut enim. Sed libero enim sed faucibus turpis in. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nunc id cursus metus aliquam. Elementum nibh tellus molestie nunc non."
         url="https://www.google.com"
-        src={readerReaderImg}
-        alt="Link to Read Reader Application"
+        src={brainstormImg}
+        alt="Link to Brain Storm Application"
       >
-        <React />
+        <HTML5 />
+        <Javascript />
         <CSS />
-        <Express />
-        <Nodejs />
-        <MongoDb />
       </Project>
 
       <Project
-        title="Read Reader"
+        title="Emergence University"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id venenatis a condimentum vitae. Enim sit amet venenatis urna cursus. Etiam erat velit scelerisque in dictum non consectetur a erat. Arcu bibendum at varius vel pharetra vel turpis nunc. Risus sed vulputate odio ut enim. Sed libero enim sed faucibus turpis in. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nunc id cursus metus aliquam. Elementum nibh tellus molestie nunc non."
         url="https://www.google.com"
-        src={readerReaderImg}
-        alt="Link to Read Reader Application"
+        src={emergenceUniversityImg}
+        alt="Link to Emergence University Application"
       >
-        <React />
+        <HTML5 />
+        <CSharp />
         <CSS />
-        <Express />
-        <Nodejs />
-        <MongoDb />
       </Project>
     </div>
   );
