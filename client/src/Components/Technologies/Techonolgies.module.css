@@ -1,9 +1,9 @@
 .iconList {
+  margin: 25px 90px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  gap: 10px;
 }
 .iconList li {
   list-style: none;
@@ -14,7 +14,7 @@
   width: auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 860px) {
   .iconList li img {
     height: 36px;
   }
