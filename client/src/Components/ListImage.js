@@ -9,8 +9,8 @@ const ListImage = (props) => {
         component="img"
         className={classes}
         sx={{
-          height: { xs: 36, md: 48 },
-          width: { xs: 36, md: 48 },
+          // height: { xs: 24, md: 36 },
+          // width: { xs: 24, md: 36 },
           maxHeight: "100%",
           filter: "grayscale(100%)",
           opacity: opacity,
