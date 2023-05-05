@@ -27,6 +27,14 @@ const About = () => {
           &nbsp;Sings Loudly and Proudy alone in a room
         </li>
       </ul>
+      <p className={styles["about-description"]}>
+        Hi, I'm{" "}
+        <span className={`decorative ${styles["about-webDev"]}`}>
+          Anna Astle
+        </span>
+        , a web developer who specializes in <b>React and Node.js</b>. I love
+        building dynamic and intuitive web applications that delight users.
+      </p>
     </div>
   );
 };
