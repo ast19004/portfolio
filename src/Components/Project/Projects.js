@@ -30,7 +30,7 @@ const Projects = () => {
       <Project
         title="Read Reader"
         description="Created with elementary school children and their guardians in mind, this application provides guardians with the ability to track the children's daily reading. Each child has their own personal account within the guardian's account and is able to 'pay' for rewards based on the amount of time they have read. It is up the main user/ guardian to create possible prizes and to decide upon how much time in reading will be required to redeem each prize."
-        href="https://read-reader.herokuapp.com/"
+        href="https://ast19004.github.io/ReadReader/"
         src={readerReaderImg}
         alt="Link to Read Reader Application"
       >
