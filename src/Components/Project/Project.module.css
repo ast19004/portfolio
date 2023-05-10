@@ -1,6 +1,6 @@
-.project {
+/* .project {
   margin: 100px;
-}
+} */
 .project:nth-of-type(2n) {
   flex-direction: row-reverse;
 }

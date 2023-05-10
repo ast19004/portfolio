@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+
+html:not([data-scroll="0"]) {
+  color: red;
+}
+html:not([data-scroll="0"]) header {
+  background-color: white;
+}
+
 .decorative {
   font-family: "Uncial Antiqua", cursive;
 }
@@ -33,7 +41,7 @@ li {
   pointer-events: none;
   color: rgba(50, 50, 50, 0.15);
   /* color: rgba(172, 255, 47, 0.45); */
-  z-index: -1;
+  /* z-index: -1; */
 }
 @media (min-height: 450px) {
   .App-logo {
@@ -44,6 +52,13 @@ li {
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (min-width: 450px) {
+  .App div:nth-child(n + 3) {
+    max-width: 950px;
+    margin: 0 auto;
   }
 }
 /* 
@@ -58,16 +73,9 @@ li {
   color: white;
 } */
 
-html:not([data-scroll="0"]) {
-  color: red;
-}
-html:not([data-scroll="0"]) header {
-  background-color: white;
-}
-
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 /* @keyframes App-logo-spin {
   from {

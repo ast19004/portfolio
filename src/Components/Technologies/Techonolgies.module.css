@@ -1,9 +1,9 @@
 .iconList {
-  margin: 25px 90px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: -10px;
 }
 .iconList li {
   list-style: none;
