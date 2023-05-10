@@ -9,7 +9,7 @@ import MusicNoteIcon from "@mui/icons-material/MusicNote";
 const About = () => {
   return (
     <div className={styles.about}>
-      <span className={styles["about-webDev"]}>
+      {/* <span className={styles["about-webDev"]}>
         <MainLogo /> Web Developer
       </span>
       <p>Who...</p>
@@ -26,7 +26,7 @@ const About = () => {
           <MusicNoteIcon />
           &nbsp;Sings Loudly and Proudy alone in a room
         </li>
-      </ul>
+      </ul> */}
       <p className={styles["about-description"]}>
         Hi, I'm{" "}
         <span className={`decorative ${styles["about-webDev"]}`}>
