@@ -3,7 +3,7 @@
   text-align: left;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .project-details {
     width: 40%;
   }

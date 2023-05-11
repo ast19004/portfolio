@@ -1,11 +1,11 @@
-/* .project {
-  margin: 100px;
-} */
+.project {
+  max-width: 950px;
+}
 .project:nth-of-type(2n) {
   flex-direction: row-reverse;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .project {
     display: flex;
     align-items: center;

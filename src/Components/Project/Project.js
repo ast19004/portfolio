@@ -2,6 +2,8 @@ import ProjectDetails from "./ProjectDetails";
 import ProjectThumbnail from "./ProjectThumbnail";
 
 import styles from "./Project.module.css";
+import styled from "styled-components";
+import { Box } from "@mui/material";
 
 const Project = (props) => {
   return (
@@ -11,9 +13,17 @@ const Project = (props) => {
         description={props.description}
         technologies={props.children}
       />
-      <ProjectThumbnail href={props.href} src={props.src} alt={props.alt} />
+      <ThumbnailContainer>
+        <ProjectThumbnail href={props.href} src={props.src} alt={props.alt} />
+      </ThumbnailContainer>
     </div>
   );
 };
 
 export default Project;
+
+const ThumbnailContainer = styled(Box)`
+  @media (min-width: 950px) {
+    max-width: 40%;
+  }
+`;

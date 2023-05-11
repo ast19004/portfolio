@@ -8,6 +8,7 @@ const Button = (props) => {
 
   return (
     <button
+      style={props.sx}
       type="button"
       className={classes}
       onClick={(e) => {
