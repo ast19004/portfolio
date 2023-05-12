@@ -4,7 +4,7 @@ const ProjectThumbnail = (props) => {
       <div
         style={{
           marginTop: "60px",
-          border: "1px solid rgba(50, 50, 50, 0.3)",
+          // border: "1px solid rgba(50, 50, 50, 0.3)",
           background: "rgba(50, 50, 50, 0.2)",
           borderRadius: "10px",
         }}

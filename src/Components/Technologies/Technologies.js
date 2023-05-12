@@ -25,7 +25,7 @@ const Technologies = (props) => {
       <p
         style={{
           textAlign: "left",
-          // margin: "0 100px 0 100px",
+          marginBottom: "50px",
           display: "flex",
           alignItems: "center",
         }}
