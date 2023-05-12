@@ -1,21 +1,45 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import styles from "./MainNav.module.css";
 import Button from "./Button";
 
 import MainLogo from "./MainLogo";
-import MenuIcon from "@mui/icons-material/Menu";
+import Hamburger from "hamburger-react";
+
+import { Menu, MenuItem } from "@mui/material";
 
 const MainNav = () => {
-  const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 600;
+  const [width, setWidth] = useState(window.innerWidth);
+  const [isOpen, setOpen] = useState(false);
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.target);
+  };
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    setOpen(false);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
   return (
     <Nav>
-      <Button href="#" variant="rounded">
-        <MainLogo /> WEB DEV
+      <Button
+        href="#"
+        variant="rounded"
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "50px",
+          color: "red",
+          fontSize: "1.5rem",
+        }}
+      >
+        <MainLogo />
       </Button>
       {width > breakpoint ? (
         <NavRightContainer>
@@ -29,9 +53,60 @@ const MainNav = () => {
         </NavRightContainer>
       ) : (
         <NavRightMobileContainer>
-          <Button href="#" variant="rounded" sx={{ width: "50px" }}>
-            <MenuIcon />
-          </Button>
+          <Hamburger
+            color="#888"
+            toggled={isOpen}
+            toggle={setOpen}
+            size={30}
+            onClick={handleMenuClick}
+            aria-controls={isOpen ? "account-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={isOpen ? "true" : undefined}
+          />
+          <Menu
+            anchorEl={anchorEl}
+            open={isOpen}
+            onClose={handleMenuClose}
+            onClick={handleMenuClick}
+            PaperProps={{
+              elevation: 0,
+              sx: {
+                overflow: "visible",
+                filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                mt: 5,
+                right: 0,
+                left: "unset !important",
+                borderRadius: "25px 0 0 25px",
+                "& .MuiAvatar-root": {
+                  width: 32,
+                  height: 32,
+                  ml: -0.5,
+                  mr: 1,
+                },
+                "& .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root ": {
+                  margin: "0",
+                },
+              },
+            }}
+            // transformOrigin={{ horizontal: "right", vertical: "top" }}
+            // anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+          >
+            <MenuItem onClick={() => setOpen(false)}>
+              <a href="/#about" className={styles.navLink}>
+                ABOUT
+              </a>
+            </MenuItem>
+            <MenuItem onClick={() => setOpen(false)}>
+              <a href="/#projects" className={styles.navLink}>
+                PROJECTS
+              </a>
+            </MenuItem>
+            <MenuItem onClick={() => setOpen(false)}>
+              <a href="/#contact" className={styles.navLink}>
+                CONTACTS
+              </a>
+            </MenuItem>
+          </Menu>
         </NavRightMobileContainer>
       )}
     </Nav>
