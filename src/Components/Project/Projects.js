@@ -58,7 +58,7 @@ const Projects = () => {
         title="Brain Storm"
         description="
         This application was created as my individual final for my Javascript class during the beginning of my Web Development journey. Using data in the trivia API found at 'https://opentdb.com/api_config.php', I created a trivia game that allows an individual to select a certain category, test their knowledge, and get their score at the end. Beyond its demonstration of Javascript skill, this application is another demonstration of playful animation and styling."
-        url="https://alouisa.github.io/WDD330/week14/triviaGame/"
+        href="https://alouisa.github.io/WDD330/week14/triviaGame/"
         src={brainstormImg}
         alt="Link to Brain Storm Application"
       >
