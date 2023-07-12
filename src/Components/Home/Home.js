@@ -12,7 +12,7 @@ import { Box } from "@mui/material";
 
 const Home = () => {
   return (
-    <Box sx={{ width: "100%", backgroundColor: "#f1f1f1" }}>
+    <Box sx={{ maxWidth: "100%", backgroundColor: "#f1f1f1" }}>
       <div className={styles.homeContainer}>
         <div className={styles.colLeft}>
           <img src={AnnaAstleImg} alt="Web Developer Anna Astle" />

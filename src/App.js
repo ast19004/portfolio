@@ -14,10 +14,12 @@ function App() {
       <Home />
       {/* <About />
       <Technologies /> */}
-      <hr className="page-break" id="projects"></hr>
-      <Projects />
-      <hr className="page-break" id="contact"></hr>
-      <Contact />
+      <main>
+        <hr className="page-break" id="projects"></hr>
+        <Projects />
+        <hr className="page-break" id="contact"></hr>
+        <Contact />
+      </main>
     </div>
   );
 }

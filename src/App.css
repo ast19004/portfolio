@@ -24,6 +24,11 @@ h1 {
   line-height: 3.5rem;
 }
 
+main {
+  padding: 2%;
+  margin: 0 auto;
+}
+
 .page-break {
   opacity: 0;
 }
@@ -41,10 +46,9 @@ li {
   list-style: none;
 }
 
-.App {
+/* .App {
   text-align: center;
-  /* margin: 2%; */
-}
+} */
 
 .App-logo {
   position: absolute;
@@ -73,12 +77,11 @@ li {
   }
 }
 
-@media (min-width: 450px) {
+/* @media (min-width: 450px) {
   .App div:nth-child(n + 3) {
     max-width: 950px;
-    margin: 0 auto;
   }
-}
+} */
 /* 
 .App-header {
   background-color: #282c34;
