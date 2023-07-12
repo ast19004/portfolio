@@ -44,7 +44,7 @@ const Projects = () => {
 
       <Project
         title="Scootz"
-        description="This ficticious Scooter Rental Website is built using the React library and demonstrates some playful use of CSS animations."
+        description="This fictitious Scooter Rental Website is built using the React library and demonstrates some playful use of CSS animations."
         href="https://ast19004.github.io/scootz/"
         src={scootzImg}
         alt="Link to Scootz Application"

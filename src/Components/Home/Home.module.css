@@ -1,10 +1,26 @@
-.App-welcome {
+.homeContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  height: 500px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+.colLeft img {
+  height: 500px;
+}
+.colRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .App-welcome {
   display: grid;
   min-height: 96vh;
   max-height: 550px;
-}
+} */
 
-.intro {
+/* .intro {
   align-self: end;
 }
 
@@ -40,4 +56,4 @@
   display: flex;
   width: 65px;
   justify-content: space-evenly;
-}
+} */

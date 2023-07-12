@@ -1,17 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap");
 
-html:not([data-scroll="0"]) {
-  color: red;
-}
+/* html:not([data-scroll="0"]) {
+  color: #0c77ff;
+} */
 html:not([data-scroll="0"]) header {
   background-color: white;
 }
 
-.decorative {
-  font-family: "Uncial Antiqua", cursive;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #585858;
 }
+
+.decorative,
+h1,
+h2 {
+  font-family: "Quantico", sans-serif;
+  color: #0c77ff;
+}
+
+h1 {
+  margin: 5px 0 15px 0;
+  line-height: 3.5rem;
+}
+
 .page-break {
-  opacity: 0.25;
+  opacity: 0;
 }
 .gray {
   color: #555;
@@ -20,7 +34,7 @@ html:not([data-scroll="0"]) header {
   font-size: 36px;
 }
 .font-large {
-  font-size: 60px;
+  font-size: 60px !important;
 }
 
 li {
@@ -29,7 +43,7 @@ li {
 
 .App {
   text-align: center;
-  margin: 2%;
+  /* margin: 2%; */
 }
 
 .App-logo {
@@ -42,6 +56,10 @@ li {
   color: rgba(50, 50, 50, 0.15);
   /* color: rgba(172, 255, 47, 0.45); */
   /* z-index: -1; */
+}
+
+.hidden {
+  display: none;
 }
 @media (min-height: 450px) {
   .App-logo {

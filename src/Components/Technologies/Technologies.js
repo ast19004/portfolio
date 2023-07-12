@@ -17,23 +17,9 @@ import {
 } from "./TechIcons";
 import { Box } from "@mui/system";
 
-import EastIcon from "@mui/icons-material/East";
-
 const Technologies = (props) => {
   return (
     <Box sx={props.sx}>
-      <p
-        style={{
-          textAlign: "left",
-          marginBottom: "50px",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        Knows (proficient&nbsp;
-        <EastIcon fontSize="small" />
-        &nbsp;experienced)...
-      </p>
       <ul className={styles.iconList}>
         <li></li>
         <HTML5 />
@@ -51,6 +37,10 @@ const Technologies = (props) => {
         <Java />
         <Python />
       </ul>
+
+      <Box sx={{ position: "relative" }} className={styles.expertise}>
+        <Box></Box>
+      </Box>
     </Box>
   );
 };

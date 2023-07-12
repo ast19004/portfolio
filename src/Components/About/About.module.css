@@ -1,6 +1,7 @@
 .about {
-  margin: 100px 0;
+  padding-top: 55px;
   text-align: left;
+  max-width: 650px;
 }
 .about-webDev {
   font-size: 25px;
@@ -23,7 +24,7 @@
 .about ul li {
   color: rgb(90, 90, 90);
 }
-.about-description {
+/* .about-description {
   margin-top: 100px;
   max-width: 750px;
-}
+} */

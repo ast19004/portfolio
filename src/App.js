@@ -9,11 +9,11 @@ import Technologies from "./Components/Technologies/Technologies";
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
+      <hr className="page-break hidden" id="about"></hr>
       <Home />
-      <hr className="page-break" id="about"></hr>
-      <About />
-      <Technologies />
+      {/* <About />
+      <Technologies /> */}
       <hr className="page-break" id="projects"></hr>
       <Projects />
       <hr className="page-break" id="contact"></hr>

@@ -1,40 +1,22 @@
 import styles from "./About.module.css";
 
-import MainLogo from "../MainLogo";
-
-import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
-import TerrainIcon from "@mui/icons-material/Terrain";
-import MusicNoteIcon from "@mui/icons-material/MusicNote";
-
 const About = () => {
   return (
     <div className={styles.about}>
-      {/* <span className={styles["about-webDev"]}>
-        <MainLogo /> Web Developer
+      <span style={{ color: "#C6C5C5", fontSize: "1.1rem" }}>
+        WEB DEVELOPER
       </span>
-      <p>Who...</p>
-      <ul>
-        <li>
-          <TerrainIcon />
-          &nbsp;Enjoys Hiking
-        </li>
-        <li>
-          Loves Biking at the pump track&nbsp;
-          <DirectionsBikeIcon />
-        </li>
-        <li>
-          <MusicNoteIcon />
-          &nbsp;Sings Loudly and Proudy alone in a room
-        </li>
-      </ul> */}
-      <p className={styles["about-description"]}>
-        Hi, I'm{" "}
-        <span className={`decorative ${styles["about-webDev"]}`}>
+      <section>
+        <h1 className={`decorative font-large ${styles["about-webDev"]}`}>
+          Hi, I'm <br />
           Anna Astle
+        </h1>
+        <span>
+          A web developer who specializes in{" "}
+          <b style={{ color: "#0c77ff" }}>React and Node.js</b>. I love building
+          dynamic and intuitive web applications that delight users.
         </span>
-        , a web developer who specializes in <b>React and Node.js</b>. I love
-        building dynamic and intuitive web applications that delight users.
-      </p>
+      </section>
     </div>
   );
 };
