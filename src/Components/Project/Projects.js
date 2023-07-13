@@ -47,7 +47,7 @@ const Projects = () => {
         title="SCOOTZ"
         description="This fictitious Scooter Rental Website is built using the React library and demonstrates some playful use of CSS animations."
         href="https://ast19004.github.io/scootz/"
-        github="https://github.com/ast19004/ReadReader"
+        github="https://github.com/ast19004/scootz"
         src={scootzImg}
         alt="Link to Scootz Application"
       >
@@ -61,7 +61,7 @@ const Projects = () => {
         description="
         This application was created as my individual final for my Javascript class during the beginning of my Web Development journey. Using data in the trivia API found at 'https://opentdb.com/api_config.php', I created a trivia game that allows an individual to select a certain category, test their knowledge, and get their score at the end. Beyond its demonstration of Javascript skill, this application is another demonstration of playful animation and styling."
         href="https://alouisa.github.io/WDD330/week14/triviaGame/"
-        github="https://github.com/ast19004/ReadReader"
+        github="https://github.com/alouisa/alouisa.github.io/tree/master/WDD330/week14/triviaGame"
         src={brainstormImg}
         alt="Link to Brain Storm Application"
       >
