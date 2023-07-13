@@ -68,6 +68,7 @@ const Projects = () => {
         <HTML5 />
         <Javascript />
         <CSS />
+        <Sass />
       </Project>
       {/* 
       <Project
