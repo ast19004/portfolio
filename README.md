@@ -4,8 +4,7 @@
 
 - [Description](#description)
 - [Technologies](#technologies)
-<br/>
-![Screen Shot 2023-07-13 at 3 25 51 PM](https://github.com/ast19004/portfolio/assets/84036167/6570383f-68e0-4573-b29d-438399f1a673)
+<br/>![Portfolio_AnnaAstle](https://github.com/ast19004/portfolio/assets/84036167/fb2b3a40-7a8e-41a1-842c-d796725babcf)
 <br/>
 
 # Description
