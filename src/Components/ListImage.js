@@ -12,7 +12,7 @@ const ListImage = (props) => {
           height: { xs: 24, md: 36 },
           width: { xs: 24, md: 36 },
           maxHeight: "100%",
-          filter: "grayscale(100%)",
+          filter: "grayscale(100%) contrast(77%)",
           opacity: opacity,
         }}
         alt={props.alt}
