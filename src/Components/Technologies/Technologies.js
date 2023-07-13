@@ -19,26 +19,20 @@ import { Box } from "@mui/system";
 
 const Technologies = (props) => {
   return (
-    <Box sx={props.sx}>
-      <ul className={styles.iconList}>
-        <li></li>
-        <HTML5 />
-        <CSS />
-        <Javascript />
-        <React />
-        <GitHub />
-        <Sass />
-        <Nodejs />
-        <Express />
-        <MongoDb />
-        <MySQL />
-        <PHP />
-        <CSharp />
-        <Java />
-        <Python />
-      </ul>
-
-      <Box className={styles.expertise}>
+    <Box className={styles.expertise}>
+      <Box>
+        <ul className={styles.iconList}>
+          <li></li>
+          <HTML5 />
+          <CSS />
+          <Javascript />
+          <React />
+          <GitHub />
+          <Sass />
+          <Nodejs />
+          <Express />
+          <MongoDb />
+        </ul>
         <Box>
           <Box
             sx={{
@@ -63,12 +57,25 @@ const Technologies = (props) => {
             Proficient
           </Box>
         </Box>
+      </Box>
+
+      <Box>
+        <ul className={styles.iconList}>
+          <li></li>
+          <MySQL />
+          <PHP />
+          <CSharp />
+          <Java />
+          <Python />
+        </ul>
+
         <Box>
           <Box
             sx={{
               height: "2px",
               backgroundColor: "#BEBABA",
               width: "98px",
+              marginLeft: "-3px",
               "@media(min-width: 860px)": { width: "118px" },
             }}
           />
