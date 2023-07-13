@@ -17,6 +17,7 @@ const Project = (props) => {
         title={props.title}
         description={props.description}
         technologies={props.children}
+        github={props.github}
       />
     </div>
   );
