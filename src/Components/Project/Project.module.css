@@ -59,8 +59,8 @@
   }
   .project:nth-child(2) .project-details {
     position: absolute;
-    bottom: -20%;
-    left: 40%;
+    bottom: -21.75%;
+    left: 35%;
   }
   .project-details h2 {
     font-size: 3rem;
