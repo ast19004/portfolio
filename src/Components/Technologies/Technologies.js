@@ -69,7 +69,7 @@ const Technologies = (props) => {
               height: "2px",
               backgroundColor: "#BEBABA",
               width: "98px",
-              "@media(min-width: 860px)": { fontSize: "0.7rem" },
+              "@media(min-width: 860px)": { width: "118px" },
             }}
           />
           <Box
