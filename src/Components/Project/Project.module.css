@@ -9,6 +9,9 @@
 }
 .project-details {
   background-color: rgba(164, 164, 164, 0.15);
+  border: 1px solid #0000001a;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   min-width: 250px;
   text-align: left;
   border-radius: 15px;
@@ -36,23 +39,30 @@
   .project-thumbnail {
     max-width: 60%;
   }
+
   .project:nth-child(2),
   .project:last-child {
     flex-direction: row-reverse;
   }
   .project:nth-child(2) {
-    margin-bottom: 80px;
+    margin-bottom: 150px;
+  }
+  .project:last-child {
+    gap: 50px;
   }
   .project-details {
     width: 35%;
+  }
+
+  .project:first-child .project-details {
+    margin-left: -75px;
   }
   .project:nth-child(2) .project-details {
     position: absolute;
     bottom: -20%;
     left: 40%;
   }
-
-  .project:last-child {
-    gap: 50px;
+  .project-details h2 {
+    font-size: 3rem;
   }
 }
