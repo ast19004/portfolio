@@ -4,7 +4,8 @@
 
 - [Description](#description)
 - [Technologies](#technologies)
-<br/>![Portfolio_AnnaAstle](https://github.com/ast19004/portfolio/assets/84036167/fb2b3a40-7a8e-41a1-842c-d796725babcf)
+<br/>
+![Portfolio_AnnaAstle](https://github.com/ast19004/portfolio/assets/84036167/fb2b3a40-7a8e-41a1-842c-d796725babcf)
 <br/>
 
 # Description
