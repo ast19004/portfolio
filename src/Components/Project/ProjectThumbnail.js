@@ -1,6 +1,11 @@
 const ProjectThumbnail = (props) => {
   return (
-    <a href={props.href} target="_blank" rel="noreferrer">
+    <a
+      className={props.className}
+      href={props.href}
+      target="_blank"
+      rel="noreferrer"
+    >
       <div
         style={{
           marginTop: "60px",
