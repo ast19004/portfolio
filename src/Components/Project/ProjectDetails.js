@@ -12,8 +12,19 @@ const ProjectDetails = (props) => {
         underline="none"
         sx={{ padding: "5px" }}
       >
-        <b>View My Code</b>
+        {!props.github2 ? <b>View My Code</b> : <b>View Frontend Code</b>}
       </Link>
+      {props.github2 && (
+        <Link
+          href={props.github2}
+          target="_blank"
+          color="#777"
+          underline="none"
+          sx={{ padding: "5px" }}
+        >
+          |&nbsp;&nbsp;<b>View Backend Code</b>
+        </Link>
+      )}
       <ProjectTechnologies children={props.technologies} />
     </section>
   );
