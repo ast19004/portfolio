@@ -39,7 +39,10 @@ main {
   font-size: 36px;
 }
 .font-large {
-  font-size: 60px !important;
+  font-size: 45px;
+}
+.font-xlarge {
+  font-size: 60px;
 }
 
 li {

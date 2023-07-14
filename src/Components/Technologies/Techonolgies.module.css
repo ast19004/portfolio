@@ -2,7 +2,7 @@
   padding: 0;
   display: flex;
   gap: 5.5px;
-  margin: 0 0 0 -10px;
+  margin: 10px 0 0 -10px;
 }
 .iconList li {
   list-style: none;
@@ -14,15 +14,23 @@
 .expertise {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  padding-bottom: 75px;
+  gap: 2px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 435px) {
+  .expertise {
+    gap: 12px;
+  }
+}
+@media (min-width: 550px) {
+  .expertise {
+    padding-bottom: 100px;
+  }
 }
 
 @media (min-width: 860px) {
   .iconList li img {
     height: 20px;
-  }
-  .expertise {
-    padding-bottom: 25px;
   }
 }

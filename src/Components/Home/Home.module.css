@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 15px;
-  height: 550px;
   margin: 2%;
   max-width: 600px;
 }
@@ -12,6 +11,7 @@
 .colLeft img {
   max-height: 500px;
   max-width: 100%;
+  display: none;
 }
 .colRight {
   display: flex;
@@ -21,8 +21,18 @@
   margin-top: 35px;
 }
 
+@media (min-width: 375px) {
+  .colLeft img {
+    display: block;
+  }
+}
+
 @media (min-width: 550px) {
+  .colLeft img {
+    display: block;
+  }
   .homeContainer {
     margin: 0 auto;
+    height: 550px;
   }
 }
