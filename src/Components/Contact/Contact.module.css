@@ -9,6 +9,11 @@
   font-size: 100px;
   opacity: 0.8;
 }
+.contact-email,
+.contact-phone {
+  text-decoration: none;
+  color: inherit;
+}
 .links {
   margin-bottom: 15px;
 }
