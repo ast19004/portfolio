@@ -1,6 +1,6 @@
 .homeContainer {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1.5fr;
   gap: 15px;
   margin: 2%;
   max-width: 600px;
