@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.41a9873b.css",
-    "main.js": "/portfolio/static/js/main.c11f6850.js",
+    "main.css": "/portfolio/static/css/main.22d1ac1e.css",
+    "main.js": "/portfolio/static/js/main.9a7347fc.js",
     "static/js/496.b1a37ed9.chunk.js": "/portfolio/static/js/496.b1a37ed9.chunk.js",
     "static/media/scootz.jpg": "/portfolio/static/media/scootz.5e36d0125a0482ddf1b7.jpg",
     "static/media/readreader.jpg": "/portfolio/static/media/readreader.549bb00133fcd81b475f.jpg",
@@ -9,12 +9,12 @@
     "static/media/annaastle_halfImg.jpg": "/portfolio/static/media/annaastle_halfImg.f90208aacf4c8f7882b6.jpg",
     "static/media/emergenceUniversity.jpg": "/portfolio/static/media/emergenceUniversity.6bae764461bf09cb8b99.jpg",
     "index.html": "/portfolio/index.html",
-    "main.41a9873b.css.map": "/portfolio/static/css/main.41a9873b.css.map",
-    "main.c11f6850.js.map": "/portfolio/static/js/main.c11f6850.js.map",
+    "main.22d1ac1e.css.map": "/portfolio/static/css/main.22d1ac1e.css.map",
+    "main.9a7347fc.js.map": "/portfolio/static/js/main.9a7347fc.js.map",
     "496.b1a37ed9.chunk.js.map": "/portfolio/static/js/496.b1a37ed9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41a9873b.css",
-    "static/js/main.c11f6850.js"
+    "static/css/main.22d1ac1e.css",
+    "static/js/main.9a7347fc.js"
   ]
 }
