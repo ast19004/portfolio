@@ -9,12 +9,14 @@
   margin-top: 60px;
 }
 .project-thumbnail span {
+  z-index: 5;
+  opacity: 0;
   display: flex;
   align-items: center;
   padding: 5px;
   position: absolute;
   top: 10.5%;
-  right: 10%;
+  right: 10.3%;
   background-color: #0c77ff;
   color: white;
   border-radius: 10px;
@@ -48,10 +50,26 @@
   color: #bb3c93;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 955px) {
   .project {
     position: relative;
     flex-wrap: nowrap;
+  }
+
+  .project-thumbnail span {
+    right: 6%;
+  }
+  .project:first-child .project-thumbnail span {
+    top: 10.5%;
+    right: 20%;
+  }
+  .project:nth-child(2) .project-thumbnail span {
+    top: 10.5%;
+    right: 24%;
+  }
+  .project:last-child .project-thumbnail span {
+    top: 18%;
+    right: 34%;
   }
 
   .project-details {
@@ -64,7 +82,8 @@
     max-width: 62%;
   }
   .project:last-child {
-    max-width: 65%;
+    margin-top: -100px;
+    max-width: 63%;
     margin-left: 5%;
   }
   .project:nth-child(2) {

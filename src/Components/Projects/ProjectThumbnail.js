@@ -1,10 +1,24 @@
-import { Box } from "@mui/material";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
+import { Box } from "@mui/material";
 import Explore from "../UI/Explore";
 
 const ProjectThumbnail = (props) => {
+  const [inViewStyle, setInViewStyle] = useState("");
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setInViewStyle("fadeInAndOut");
+    }
+    return () => setInViewStyle("");
+  }, [inView]);
   return (
     <a
+      ref={ref}
       className={props.className}
       href={props.href}
       target="_blank"
@@ -23,7 +37,7 @@ const ProjectThumbnail = (props) => {
         ) : (
           <img src={props.defaultSrc} alt={props.alt} />
         )}
-        <Explore />
+        <Explore className={inViewStyle} />
       </Box>
     </a>
   );
