@@ -7,6 +7,8 @@
 }
 .colLeft {
   align-self: center;
+  display: grid;
+  justify-self: center;
 }
 .colLeft img {
   max-height: 500px;
@@ -19,7 +21,6 @@
   max-width: 350px;
   margin-top: 35px;
 }
-
 @media (min-width: 550px) {
   .colLeft img {
     display: block;
@@ -28,5 +29,6 @@
     margin: 0 auto;
     height: 550px;
     grid-template-columns: auto auto;
+    gap: 25px;
   }
 }

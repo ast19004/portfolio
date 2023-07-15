@@ -6,7 +6,16 @@ import { Box } from "@mui/material";
 
 const Home = () => {
   return (
-    <Box sx={{ maxWidth: "100%", backgroundColor: "#f1f1f1" }}>
+    <Box
+      sx={{
+        display: "grid",
+        justifyContent: "center",
+        alignItems: "center",
+        maxWidth: "100%",
+        minHeight: "100vh",
+        backgroundColor: "#f1f1f1",
+      }}
+    >
       <div className={styles.homeContainer}>
         <div className={styles.colLeft}>
           <img src={AnnaAstleImg} alt="Web Developer Anna Astle" />
