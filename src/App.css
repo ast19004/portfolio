@@ -12,6 +12,12 @@ body {
   color: #585858;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
+
 .decorative,
 h1,
 h2 {

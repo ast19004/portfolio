@@ -9,16 +9,21 @@ const ProjectThumbnail = (props) => {
       <div
         style={{
           marginTop: "60px",
-          // border: "1px solid rgba(50, 50, 50, 0.3)",
-          // background: "rgba(50, 50, 50, 0.2)",
           borderRadius: "10px",
         }}
       >
-        <img
-          src={props.src}
-          alt={props.alt}
-          style={{ maxWidth: "100%", maxHeight: "100%" }}
-        />
+        {props.srcList ? (
+          <picture
+            sx={{ display: "block", maxWidth: "100%", maxHeight: "100%" }}
+          >
+            {props.srcList.map(({ media, srcSet }) => (
+              <source media={media} srcSet={srcSet} />
+            ))}
+            <img src={props.defaultSrc} alt={props.alt} />
+          </picture>
+        ) : (
+          <img src={props.defaultSrc} alt={props.alt} />
+        )}
       </div>
     </a>
   );

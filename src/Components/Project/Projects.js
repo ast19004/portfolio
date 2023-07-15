@@ -19,10 +19,19 @@ import {
   Sass,
 } from "../Technologies/TechIcons";
 
-import readerReaderImg from "../../assets/images/readreader.jpg";
-import scootzImg from "../../assets/images/scootz.jpg";
-import brainstormImg from "../../assets/images/brainstorm.jpg";
-import emergenceUniversityImg from "../../assets/images/emergenceUniversity.jpg";
+import readReader550px from "../../assets/images/readreader/readreader-550px.jpg";
+import readReader850px from "../../assets/images/readreader/readreader-850px.jpg";
+import readReaderDefault from "../../assets/images/readreader/readreader.jpg";
+
+import scootz550px from "../../assets/images/scootz/scootz-550px.jpg";
+import scootz850px from "../../assets/images/scootz/scootz-850px.jpg";
+import scootz1200px from "../../assets/images/scootz/scootz-1200px.jpg";
+import scootzDefault from "../../assets/images/scootz/scootz.jpg";
+
+import brainstorm550px from "../../assets/images/brainstorm/brainstorm-550px.jpg";
+import brainstorm850px from "../../assets/images/brainstorm/brainstorm850px.jpg";
+import brainstorm1200px from "../../assets/images/brainstorm/brainstorm-1200px.jpg";
+import brainstormDefault from "../../assets/images/brainstorm/brainstorm.jpg";
 
 const Projects = () => {
   return (
@@ -33,7 +42,11 @@ const Projects = () => {
         href="https://read-reader.herokuapp.com/"
         github="https://github.com/ast19004/ReadReader"
         github2="https://github.com/ast19004/ReadReader-server"
-        src={readerReaderImg}
+        srcList={[
+          { media: "(max-width: 550px)", srcSet: readReader550px },
+          { media: "(max-width: 850px)", srcSet: readReader850px },
+        ]}
+        defaultSrc={readReaderDefault}
         alt="Link to Read Reader Application"
       >
         <Javascript />
@@ -49,7 +62,12 @@ const Projects = () => {
         description="This fictitious Scooter Rental Website is built using the React library and demonstrates some playful use of CSS animations."
         href="https://ast19004.github.io/scootz/"
         github="https://github.com/ast19004/scootz/tree/main"
-        src={scootzImg}
+        srcList={[
+          { media: "(max-width: 550px)", srcSet: scootz550px },
+          { media: "(max-width: 850px)", srcSet: scootz850px },
+          { media: "(max-width: 1200px)", srcSet: scootz1200px },
+        ]}
+        defaultSrc={scootzDefault}
         alt="Link to Scootz Application"
       >
         <Javascript />
@@ -63,7 +81,12 @@ const Projects = () => {
         This application was created as my individual final for my Javascript class during the beginning of my Web Development journey. Using data in the trivia API found at 'https://opentdb.com/api_config.php', I created a trivia game that allows an individual to select a certain category, test their knowledge, and get their score at the end. Beyond its demonstration of Javascript skill, this application is another demonstration of playful animation and styling."
         href="https://alouisa.github.io/WDD330/week14/triviaGame/"
         github="https://github.com/alouisa/alouisa.github.io/tree/master/WDD330/week14/triviaGame"
-        src={brainstormImg}
+        srcList={[
+          { media: "(max-width: 550px)", srcSet: brainstorm550px },
+          { media: "(max-width: 850px)", srcSet: brainstorm850px },
+          { media: "(max-width: 1200px)", srcSet: brainstorm1200px },
+        ]}
+        defaultSrc={brainstormDefault}
         alt="Link to Brain Storm Application"
       >
         <HTML5 />

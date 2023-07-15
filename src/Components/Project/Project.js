@@ -9,7 +9,8 @@ const Project = (props) => {
       <ProjectThumbnail
         className={styles["project-thumbnail"]}
         href={props.href}
-        src={props.src}
+        srcList={props.srcList}
+        defaultSrc={props.defaultSrc}
         alt={props.alt}
       />
       <ProjectDetails
