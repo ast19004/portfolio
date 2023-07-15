@@ -23,8 +23,8 @@
   box-shadow: 5px 4px 8px #888888;
 }
 .project:last-child .project-thumbnail span {
-  top: 82%;
-  right: 40%;
+  top: 18%;
+  right: 34%;
 }
 .project-details {
   background-color: rgba(164, 164, 164, 0.15);
@@ -68,8 +68,8 @@
     right: 24%;
   }
   .project:last-child .project-thumbnail span {
-    top: 18%;
-    right: 34%;
+    top: 21%;
+    right: 31%;
   }
 
   .project-details {
