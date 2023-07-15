@@ -1,34 +1,35 @@
-import MainLogo from "../MainLogo";
 import styles from "./Contact.module.css";
 
-import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const currentDate = new Date();
   return (
     <footer>
       <ul className={styles.contact}>
-        <li className="decorative font-medium">Anna Astle</li>
-        <li className={styles["links"]}>
+        <li>
+          {" "}
           <a
             href="https://www.linkedin.com/in/annaastle-webdeveloper"
             rel="noreferrer"
             target="_blank"
           >
-            <LinkedInIcon
-              fontSize="large"
-              sx={{ color: "red", opacity: "0.75" }}
-            />
+            <LinkedInIcon fontSize="large" sx={{ color: "#222" }} />
           </a>
+        </li>
+
+        <li>
+          {" "}
           <a
             href="https://github.com/ast19004"
             rel="noreferrer"
             target="_blank"
           >
-            <GitHubIcon
-              fontSize="large"
-              sx={{ color: "red", opacity: ".75" }}
-            />
+            <GitHubIcon fontSize="large" sx={{ color: "#222" }} />
           </a>
         </li>
         <li>
@@ -36,18 +37,26 @@ const Contact = () => {
             className={styles["contact-email"]}
             href="mailto:annaastle5@gmail.com"
           >
-            annaastle5@gmail.com
+            <EmailIcon fontSize="large" sx={{ color: "#222" }} />
           </a>
-        </li>
-        <li>
-          <a className={styles["contact-phone"]} href="tel:323-629-6604">
-            (323) 629 6604
-          </a>
-        </li>
-        <li>
-          <MainLogo className={`App-logo ${styles["contact-logo"]}`} />
         </li>
       </ul>
+      <a
+        className={styles.viewCode}
+        href="https://github.com/ast19004/portfolio"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <b>Portfolio Code</b>
+        <Typography
+          component="span"
+          fontSize="0.82rem"
+          color="#777"
+          sx={{ display: "grid" }}
+        >
+          Anna Astle {currentDate.getFullYear()}
+        </Typography>
+      </a>
     </footer>
   );
 };
