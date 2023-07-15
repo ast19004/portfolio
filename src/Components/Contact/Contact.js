@@ -43,7 +43,7 @@ const Contact = () => {
       </ul>
       <a
         className={styles.viewCode}
-        href="https://github.com/ast19004/portfolio"
+        href="https://github.com/ast19004/portfolio/tree/portfolio-v2"
         target="_blank"
         rel="noreferrer"
       >

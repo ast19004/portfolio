@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import styles from "./MainNav.module.css";
-import Button from "./Button";
+import Button from "../UI/Button";
 
-import MainLogo from "./MainLogo";
 import Hamburger from "hamburger-react";
 
 import { Menu, MenuItem } from "@mui/material";
@@ -39,7 +38,7 @@ const MainNav = () => {
           fontSize: "1.5rem",
         }}
       >
-        <MainLogo />
+        ME
       </Button>
       {width > breakpoint ? (
         <NavRightContainer>

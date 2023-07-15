@@ -1,4 +1,4 @@
-import styles from "../Components/Button.module.css";
+import styles from "./Button.module.css";
 
 const Button = (props) => {
   const propClasses = props.className ? props.className : "";

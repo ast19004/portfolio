@@ -1,4 +1,4 @@
-import ListImage from "../ListImage";
+import ListImage from "../UI/ListImage";
 
 export const CSharp = () => {
   return (
