@@ -1,3 +1,7 @@
+import { Box } from "@mui/material";
+
+import Explore from "../UI/Explore";
+
 const ProjectThumbnail = (props) => {
   return (
     <a
@@ -6,12 +10,7 @@ const ProjectThumbnail = (props) => {
       target="_blank"
       rel="noreferrer"
     >
-      <div
-        style={{
-          marginTop: "60px",
-          borderRadius: "10px",
-        }}
-      >
+      <Box sx={{ position: "relative" }}>
         {props.srcList ? (
           <picture
             sx={{ display: "block", maxWidth: "100%", maxHeight: "100%" }}
@@ -24,7 +23,8 @@ const ProjectThumbnail = (props) => {
         ) : (
           <img src={props.defaultSrc} alt={props.alt} />
         )}
-      </div>
+        <Explore />
+      </Box>
     </a>
   );
 };

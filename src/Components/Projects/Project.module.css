@@ -6,6 +6,23 @@
 
 .project-thumbnail {
   display: block;
+  margin-top: 60px;
+}
+.project-thumbnail span {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: absolute;
+  top: 10.5%;
+  right: 10%;
+  background-color: #0c77ff;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 4px 8px #888888;
+}
+.project:last-child .project-thumbnail span {
+  top: 82%;
+  right: 40%;
 }
 .project-details {
   background-color: rgba(164, 164, 164, 0.15);
