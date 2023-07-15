@@ -29,7 +29,7 @@ import scootz1200px from "../../assets/images/scootz/scootz-1200px.jpg";
 import scootzDefault from "../../assets/images/scootz/scootz.jpg";
 
 import brainstorm550px from "../../assets/images/brainstorm/brainstorm-550px.jpg";
-import brainstorm850px from "../../assets/images/brainstorm/brainstorm850px.jpg";
+import brainstorm850px from "../../assets/images/brainstorm/brainstorm-850px.jpg";
 import brainstorm1200px from "../../assets/images/brainstorm/brainstorm-1200px.jpg";
 import brainstormDefault from "../../assets/images/brainstorm/brainstorm.jpg";
 
