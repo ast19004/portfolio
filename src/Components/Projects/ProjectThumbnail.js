@@ -30,7 +30,7 @@ const ProjectThumbnail = (props) => {
             sx={{ display: "block", maxWidth: "100%", maxHeight: "100%" }}
           >
             {props.srcList.map(({ media, srcSet }) => (
-              <source media={media} srcSet={srcSet} />
+              <source key={srcSet} media={media} srcSet={srcSet} />
             ))}
             <img src={props.defaultSrc} alt={props.alt} />
           </picture>
