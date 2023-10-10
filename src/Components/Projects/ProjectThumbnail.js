@@ -12,7 +12,7 @@ const ProjectThumbnail = (props) => {
 
   useEffect(() => {
     if (inView) {
-      setInViewStyle("fadeInAndOut");
+      setInViewStyle("fadeIn");
     }
     return () => setInViewStyle("");
   }, [inView]);

@@ -54,8 +54,8 @@ li {
   font-size: 60px;
 }
 
-.fadeInAndOut {
-  animation: fadeInAndOutBounce 5s;
+.fadeIn {
+  animation: fadeIn 1s forwards;
 }
 .moveDownFadeOut {
   animation: moveDownFadeOut 2s ease-in 5s infinite;
@@ -65,23 +65,15 @@ li {
   display: none;
 }
 
-@keyframes fadeInAndOutBounce {
+@keyframes fadeIn {
   0% {
     opacity: 0;
     transform: scale(0.8);
   }
-  25% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
 
   100% {
-    opacity: 0;
-    transform: scale(0.8);
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
