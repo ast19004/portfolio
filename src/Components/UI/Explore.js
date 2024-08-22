@@ -7,7 +7,7 @@ const Explore = (props) => {
     <Box component="span" className={props.className}>
       <LaunchIcon fontSize="small" />
       &nbsp;
-      <Typography fontSize="medium">Explore</Typography>
+      <Typography fontSize="medium">Visit</Typography>
     </Box>
   );
 };
