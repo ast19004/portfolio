@@ -1,5 +1,4 @@
 .about {
-  padding-top: 55px;
   text-align: left;
   max-width: 200px;
 }
@@ -35,6 +34,7 @@
 @media (min-width: 550px) {
   .about {
     max-width: 650px;
+    padding-top: 20px;
   }
   .about-webDev {
     font-size: 60px;
