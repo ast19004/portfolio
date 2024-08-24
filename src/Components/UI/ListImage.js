@@ -14,6 +14,9 @@ const ListImage = (props) => {
           maxHeight: "100%",
           filter: "grayscale(100%) contrast(77%)",
           opacity: opacity,
+          "&:hover": {
+            opacity: "100%",
+          },
         }}
         alt={props.alt}
         src={props.src}

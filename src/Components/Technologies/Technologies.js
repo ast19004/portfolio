@@ -51,7 +51,7 @@ const Technologies = (props) => {
               marginTop: "-1px",
               fontSize: "0.6rem",
               color: "#8b8989",
-              "@media(min-width: 860px)": { fontSize: "0.7rem" },
+              "@media(min-width: 860px)": { fontSize: "1rem" },
             }}
           >
             Proficient
@@ -86,7 +86,7 @@ const Technologies = (props) => {
               marginTop: "-1px",
               fontSize: "0.6rem",
               color: "#8b8989",
-              "@media(min-width: 860px)": { fontSize: "0.7rem" },
+              "@media(min-width: 860px)": { fontSize: "1rem" },
             }}
           >
             Experienced

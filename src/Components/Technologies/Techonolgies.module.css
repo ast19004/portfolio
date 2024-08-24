@@ -7,6 +7,10 @@
 .iconList li {
   list-style: none;
 }
+.iconList li img:hover {
+  transform: scale(4);
+  filter: contrast(140%);
+}
 .iconList li img {
   height: 16px;
   width: auto;

@@ -60,7 +60,7 @@ export const Java = () => {
 export const Javascript = () => {
   return (
     <ListImage
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
       alt="Javascript"
     />
   );
@@ -87,7 +87,7 @@ export const MySQL = () => {
 export const Nodejs = () => {
   return (
     <ListImage
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"
       alt="Node.js"
     />
   );
