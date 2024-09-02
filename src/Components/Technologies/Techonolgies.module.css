@@ -6,14 +6,19 @@
 }
 .iconList li {
   list-style: none;
+  transition: transform 0.5s ease-in-out;
 }
-.iconList li img:hover {
-  transform: scale(4);
-  filter: contrast(140%);
+.iconList li:hover {
+  position: relative;
+  z-index: 1000;
+  transform: scale(1.3);
 }
 .iconList li img {
   height: 16px;
   width: auto;
+}
+.iconList li img:hover {
+  filter: contrast(140%);
 }
 .expertise {
   display: flex;

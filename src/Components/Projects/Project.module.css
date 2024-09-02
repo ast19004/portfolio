@@ -35,6 +35,7 @@
   text-align: left;
   border-radius: 15px;
   padding: 2%;
+  box-shadow: 4px 4px 8px #8888886e;
 }
 .project-details h2 {
   margin: 0;
@@ -48,6 +49,10 @@
 
 .project:last-child .project-details h2 {
   color: #bb3c93;
+}
+
+.project-details a:hover {
+  color: #49c5b6;
 }
 
 @media (min-width: 955px) {
