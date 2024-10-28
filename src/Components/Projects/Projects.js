@@ -19,6 +19,8 @@ import {
   Sass,
 } from "../Technologies/TechIcons";
 
+import fijianAngelsDefault from "../../assets/images/fijianangels/fijian_angels.jpg";
+
 import readReader550px from "../../assets/images/readreader/readreader-550px.jpg";
 import readReader850px from "../../assets/images/readreader/readreader-850px.jpg";
 import readReaderDefault from "../../assets/images/readreader/readreader.jpg";
@@ -36,6 +38,22 @@ import brainstormDefault from "../../assets/images/brainstorm/brainstorm.jpg";
 const Projects = () => {
   return (
     <div className={styles.projects}>
+      <Project
+        title="FIJIAN ANGELS"
+        description="Used Figma to create design wireframe and implemented user-friendly UIs using React and Material-UI, improving site navigation and user interaction.
+
+Developed fully responsive website with CSS Grid and Flexbox, ensuring optimal display on various devices and screen sizes.
+
+Enhanced user interfaces by incorporating UI/UX best practices, including color theory, typography, and micro-interactions.
+
+Applied Material-UI components to create scalable, customizable design systems that were reusable across different sections of the application.
+
+Hosted using Heroku and connect to domain."
+        href="https://www.fijianangels.com"
+        github=""
+        defaultSrc={fijianAngelsDefault}
+        alt="Link to Fijian Angels Website"
+      />
       <Project
         title="READ READER"
         description="Created with elementary school children and their guardians in mind, this application provides guardians with the ability to track the children's daily reading. Each child has their own personal account within the guardian's account and is able to 'pay' for rewards based on the amount of time they have read. It is up the main user/ guardian to create possible prizes and to decide upon how much time in reading will be required to redeem each prize."
