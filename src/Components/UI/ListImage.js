@@ -1,17 +1,16 @@
 import { Box } from "@mui/system";
 
 const ListImage = (props) => {
-  const classes = props.className ? props.className : "";
   const opacity = props.opacity ? props.opacity : "100%";
   return (
-    <li>
+    <li className={props.className}>
       <Box
         component="img"
-        className={classes}
         sx={{
-          height: { xs: 24, md: 36 },
-          width: { xs: 24, md: 36 },
+          // height: { xs: 24, md: 36 },
+          // width: { xs: 24, md: 36 },
           maxHeight: "100%",
+          width: "auto",
           filter: "grayscale(100%) contrast(77%)",
           opacity: opacity,
           "&:hover": {

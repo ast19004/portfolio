@@ -33,7 +33,7 @@ const MainNav = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          width: "50px",
+          width: "3.1rem",
           color: "red",
           fontSize: "1.5rem",
         }}
@@ -115,7 +115,7 @@ const MainNav = () => {
 export default MainNav;
 const Nav = styled.nav`
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 6.25rem auto;
   justify-content: space-between;
   align-items: center;
 
@@ -124,7 +124,7 @@ const Nav = styled.nav`
 
 const NavRightContainer = styled.div`
   display: flex;
-  width: 325px;
+  width: 20.3rem;
   justify-content: space-evenly;
 `;
 

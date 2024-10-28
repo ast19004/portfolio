@@ -1,10 +1,7 @@
 import "./App.css";
-import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import Header from "./Components/Layout/Header";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
-import Technologies from "./Components/Technologies/Technologies";
 
 function App() {
   return (

@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 
 import About from "../About/About";
 import Technologies from "../Technologies/Technologies";
-import AnnaAstleImg from "../../assets/images/annaastle_halfImg.jpg";
 import styles from "./Home.module.css";
 import { Box } from "@mui/material";
 import ScrollDownIcon from "@mui/icons-material/South";
@@ -22,18 +21,7 @@ const Home = () => {
   }, [inView]);
 
   return (
-    <Box
-      ref={ref}
-      sx={{
-        position: "relative",
-        display: "grid",
-        justifyContent: "center",
-        alignItems: "center",
-        maxWidth: "100%",
-        minHeight: "100vh",
-        backgroundColor: "#f1f1f1",
-      }}
-    >
+    <Box ref={ref} className={styles.home}>
       <Box
         className={inViewStyle}
         component="span"
@@ -41,14 +29,14 @@ const Home = () => {
       >
         <ScrollDownIcon fontSize="large" sx={{ color: "#0c77ff" }} />
       </Box>
-      <div className={styles.homeContainer}>
-        <div className={styles.colLeft}>
-          <img src={AnnaAstleImg} alt="Web Developer Anna Astle" />
+      <div className={styles.homebox}>
+        <div className={styles["homebox_col--left"]}>
+          {/* <img src={AnnaAstleImg} alt="Web Developer Anna Astle" /> */}
         </div>
-        <div className={styles.colRight}>
-          <About />
-          <Technologies />
-        </div>
+        {/* <div className={styles.colRight}> */}
+        <About className={styles.homebox_about} />
+        <Technologies className={styles.homebox_tech} />
+        {/* </div> */}
       </div>
     </Box>
   );

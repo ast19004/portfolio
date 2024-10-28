@@ -3,10 +3,21 @@
 /* html:not([data-scroll="0"]) {
   color: #0c77ff;
 } */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 html:not([data-scroll="0"]) header {
   background-color: white;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   color: #585858;
@@ -26,7 +37,7 @@ h2 {
 }
 
 h1 {
-  margin: 5px 0 15px 0;
+  margin: 0.5rem 0 1rem 0;
   line-height: 3.5rem;
 }
 
@@ -45,13 +56,13 @@ li {
   color: #555;
 }
 .font-medium {
-  font-size: 36px;
+  font-size: 2.3rem;
 }
 .font-large {
-  font-size: 45px;
+  font-size: 2.8rem;
 }
 .font-xlarge {
-  font-size: 60px;
+  font-size: 3.8rem;
 }
 
 .fadeIn {

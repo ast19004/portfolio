@@ -2,9 +2,9 @@ footer {
   display: grid;
   justify-content: center;
   gap: 1rem;
-  margin-top: 100px;
+  margin-top: 6.3rem;
   background-color: #f1f1f1;
-  padding: 30px;
+  padding: 1.9rem;
 }
 
 .contact {
@@ -19,5 +19,5 @@ footer {
   font-size: 0.9rem;
   color: #777;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.6rem;
 }

@@ -1,34 +1,62 @@
-.homeContainer {
+.home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin: 2%;
-  max-width: 600px;
-}
-.colLeft {
-  align-self: center;
-  display: grid;
-  justify-self: center;
-}
-.colLeft img {
-  max-height: 500px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   max-width: 100%;
+  background-color: #f1f1f1;
 }
-.colRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 350px;
-  margin-top: 35px;
+.homebox {
+  position: relative;
+  padding: 2%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 38rem;
+  max-height: 75vh;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr; /* TODO: Look into setting this to one 1fr row for horizontal view*/
+  column-gap: 1rem;
 }
-@media (min-width: 550px) {
-  .colLeft img {
-    display: block;
+.homebox_col--left {
+  height: 100%;
+  width: auto;
+  background-image: url("../../assets/images/annaastle_halfImg.jpg");
+  background-repeat: no-repeat;
+  background-position: top right; /* Align top of background image with top of container*/
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.homebox_about {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  align-self: start;
+}
+.homebox_tech {
+  background-color: rgba(255, 255, 255, 0.603);
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  border-radius: 15px;
+
+  justify-self: center;
+  align-self: end;
+}
+
+@media (min-width: 25.75rem) {
+}
+@media (min-width: 40rem) {
+  .home {
   }
+  .homebox_tech {
+    /* grid-column: 2/-1;
+    width: inherit; */
+  }
+}
+
+@media (min-width: 50rem) {
   .homeContainer {
-    margin: 0 auto;
-    height: 550px;
-    grid-template-columns: auto auto;
-    gap: 25px;
+    /* grid-template-columns: 1fr 2fr; */
   }
 }

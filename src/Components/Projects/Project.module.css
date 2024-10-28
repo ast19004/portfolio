@@ -6,14 +6,14 @@
 
 .project-thumbnail {
   display: block;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 .project-thumbnail span {
   z-index: 5;
   opacity: 0;
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 0.3rem;
   position: absolute;
   top: 10.5%;
   right: 10.3%;
@@ -31,7 +31,7 @@
   border: 1px solid #0000001a;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  min-width: 250px;
+  min-width: 15.6rem;
   text-align: left;
   border-radius: 15px;
   padding: 2%;
@@ -55,7 +55,7 @@
   color: #49c5b6;
 }
 
-@media (min-width: 955px) {
+@media (min-width: 59.7rem) {
   .project {
     position: relative;
     flex-wrap: nowrap;
@@ -78,7 +78,7 @@
   }
 
   .project-details {
-    max-width: 375px;
+    max-width: 23.4rem;
   }
   .project-details h2 {
     font-size: 3rem;
@@ -87,17 +87,17 @@
     max-width: 62%;
   }
   .project:last-child {
-    margin-top: -100px;
+    margin-top: -6.25rem;
     max-width: 63%;
     margin-left: 5%;
   }
   .project:nth-child(2) {
     max-width: 76%;
-    margin-bottom: 150px;
+    margin-bottom: 9.3rem;
     margin-left: 20%;
   }
   .project:last-child {
-    gap: 50px;
+    gap: 3.1rem;
   }
   .project:first-child .project-details {
     position: absolute;
@@ -115,7 +115,7 @@
     right: -40%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 81.2rem) {
   .project:first-child .project-details {
     top: 25%;
     right: -48%;

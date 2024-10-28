@@ -1,8 +1,9 @@
 import ListImage from "../UI/ListImage";
 
-export const CSharp = () => {
+export const CSharp = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
       alt="C sharp"
@@ -10,9 +11,10 @@ export const CSharp = () => {
   );
 };
 
-export const CSS = () => {
+export const CSS = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
       alt="Css"
@@ -20,9 +22,10 @@ export const CSS = () => {
   );
 };
 
-export const Express = () => {
+export const Express = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
       alt="Express"
@@ -30,53 +33,59 @@ export const Express = () => {
   );
 };
 
-export const GitHub = () => {
+export const GitHub = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="35%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
       alt="Github"
     />
   );
 };
-export const HTML5 = () => {
+export const HTML5 = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="45%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
       alt="HTML"
     />
   );
 };
-export const Java = () => {
+export const Java = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"
       alt="Java"
     />
   );
 };
-export const Javascript = () => {
+export const Javascript = (props) => {
   return (
     <ListImage
+      className={props.className}
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
       alt="Javascript"
     />
   );
 };
-export const MongoDb = () => {
+export const MongoDb = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
       alt="MongoDb"
     />
   );
 };
-export const MySQL = () => {
+export const MySQL = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
       alt="MySQL"
@@ -84,42 +93,47 @@ export const MySQL = () => {
   );
 };
 
-export const Nodejs = () => {
+export const Nodejs = (props) => {
   return (
     <ListImage
+      className={props.className}
       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"
       alt="Node.js"
     />
   );
 };
-export const PHP = () => {
+export const PHP = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
       alt="PHP"
     />
   );
 };
-export const Python = () => {
+export const Python = (props) => {
   return (
     <ListImage
+      className={props.className}
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
       alt="Python"
     />
   );
 };
-export const React = () => {
+export const React = (props) => {
   return (
     <ListImage
+      className={props.className}
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
       alt="React"
     />
   );
 };
-export const Sass = () => {
+export const Sass = (props) => {
   return (
     <ListImage
+      className={props.className}
       opacity="60%"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
       alt="Sass"

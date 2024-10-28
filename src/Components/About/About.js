@@ -1,8 +1,8 @@
 import styles from "./About.module.css";
 
-const About = () => {
+const About = (props) => {
   return (
-    <div className={styles.about}>
+    <div className={`${styles.about} ${props.className}`}>
       <span style={{ color: "#C6C5C5", fontSize: "1.1rem" }}>
         WEB DEVELOPER
       </span>
