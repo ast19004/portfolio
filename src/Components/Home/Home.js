@@ -33,11 +33,11 @@ const Home = () => {
       <Box className={styles.shapes_container}>
         <Box className={styles.shapes_container__left} >
           <About className={styles.homebox_about} />
-          {/* <Box className={ styles["shapes_container__left--image"]} /> */}
         </Box>
         <Box className={styles.shapes_container__right}/>
-          {/* <img src={logo} alt="logo" className={styles.logo } /> */}
       </Box>
+      {/* <img src={logo} alt="logo" className={styles.logo } /> */}
+      <Box className={ styles.designer_image} />
       <Technologies className={styles.homebox_tech} />
     </Box>
   );

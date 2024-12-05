@@ -1,4 +1,5 @@
 .home {
+  position: relative;
   display: grid;
   height: 100vh;
   max-width: 100vw;
@@ -19,26 +20,27 @@
 }
 .shapes_container{
   position: relative;
+  overflow: hidden;
 }
 .shapes_container__left{
-          position: absolute;
-          top: 0%;
-          z-index: 2;
-          background: linear-gradient(180deg, #e9d4bc 0%, rgba(237,109,44,1) 100%);
-          width: 90%;
-          height: 80%; 
-          border-radius: 0 45% 45% 0;
-          overflow: hidden;
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+  background: linear-gradient(180deg, #e9d4bc 0%, rgba(237,109,44,1) 100%);
+  width: 90%;
+  height: 80%; 
+  border-radius: 0 45% 45% 0;
+  overflow: hidden;
 }
-.shapes_container__left--image{
-  position: relative; 
-  top: 55%;
-  left:31%; 
-  height: 70%; 
-  width: auto; 
+.designer_image{
+  position: absolute;
+  bottom: -35%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
   background: url("../../assets/images/annaastle.png"); 
-  background-size: contain; 
   background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .shapes_container__right{
@@ -57,7 +59,7 @@
   width: 80%;
   position: absolute;
   left: 5%;
-  top: 20%;
+  top: 20vw;
 }
 
 .homebox_tech {
@@ -81,39 +83,50 @@
   }
   
 
-@media (min-width: 25.75rem) {
-}
-@media (min-width: 40rem) {
-   /* .shapes_container__left--image{
-    top: 0%;
-    left:-15%; 
-    height: 120%; 
-} */
-}
-
-@media (min-width: 50rem) {
-
-}
+/* Portrait */
 @media (max-aspect-ratio: 1/2){
-  /* .shapes_container__left--image{
-    top: 47%;   
-}  */
   .homebox_about{
     top: 30%;
   }
+   .designer_image{
+    bottom: -42%;
+  }
 }
+
+@media (min-width: 40rem) {
+  .designer_image{
+    left: 45%;
+    bottom: -55%;
+  }
+}
+
+@media (min-width: 50rem) {
+  .designer_image{
+    left: 48%;
+    bottom: -65%;
+  }
+}
+
+/* Landscape */
 @media (min-aspect-ratio: 1/1){
-  /* .shapes_container__left--image{
-    top: 4%;
-    left: 13% 
-}  */
   .homebox_about{
     width: 65%;
     top: 20%;
+  }
+  .designer_image{
+    left: 48%;
+    bottom: -10%;
   }
   .logo{
     width: 36%;
     top: 52%;
     left: 55%;
+  }
+}
+
+@media(min-width: 80rem) and (min-aspect-ratio: 1/1){
+  .designer_image{
+    left: 48%;
+    bottom: -35%;
   }
 }
