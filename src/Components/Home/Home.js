@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 import About from "../About/About";
 import Technologies from "../Technologies/Technologies";
+import logo from '../../assets/images/logo.png';
 import styles from "./Home.module.css";
 import { Box } from "@mui/material";
 import ScrollDownIcon from "@mui/icons-material/South";
@@ -29,15 +30,16 @@ const Home = () => {
       >
         <ScrollDownIcon fontSize="large" sx={{ color: "#0c77ff" }} />
       </Box>
-      <div className={styles.homebox}>
-        <div className={styles["homebox_col--left"]}>
-          {/* <img src={AnnaAstleImg} alt="Web Developer Anna Astle" /> */}
-        </div>
-        {/* <div className={styles.colRight}> */}
-        <About className={styles.homebox_about} />
-        <Technologies className={styles.homebox_tech} />
-        {/* </div> */}
-      </div>
+      <Box className={styles.shapes_container}>
+        <Box className={styles.shapes_container__left} >
+          <About className={styles.homebox_about} />
+          <Technologies className={styles.homebox_tech} />
+        </Box>
+        <Box className={ styles.shapes_container__right}>
+          <Box className={ styles["shapes_container__right--image"]} />
+        </Box>
+      </Box>
+      <img src={logo} alt="logo" className={styles.logo } />
     </Box>
   );
 };

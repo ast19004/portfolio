@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* html:not([data-scroll="0"]) {
   color: #0c77ff;
@@ -19,7 +20,7 @@ html:not([data-scroll="0"]) header {
   background-color: white;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family:  "Cantata One", serif;
   color: #585858;
 }
 
@@ -32,7 +33,9 @@ img {
 .decorative,
 h1,
 h2 {
-  font-family: "Quantico", sans-serif;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   color: #0c77ff;
 }
 
