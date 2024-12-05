@@ -13,8 +13,8 @@ const About = (props) => {
           Anna Astle
         </Box>
         <p>
-          I specializes in{" "}
-          <b style={{ color: "#366b7c" }}>React and Node.js</b> and I love building
+          I specialize in{" "}
+          <b style={{ color: "#366b7c" }}>React and Node.js</b> and love to build
           dynamic and intuitive web applications that delight users.
         </p>
       </section>

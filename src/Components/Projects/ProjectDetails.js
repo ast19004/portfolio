@@ -31,7 +31,7 @@ const ProjectDetails = (props) => {
             sx={{ verticalAlign: "middle" }}
           >
             {" "}
-            |{" "}
+            {" "}
           </Typography>
           <Link
             href={props.github2}

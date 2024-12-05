@@ -22,33 +22,34 @@
 }
 .shapes_container__left{
           position: absolute;
-          top: 10%;
+          top: 0%;
           z-index: 2;
-          background: #EAA221;
-          width: 70%;
-          height: 70%; 
-          border-radius: 0 45% 45% 0
+          background: linear-gradient(180deg, #e9d4bc 0%, rgba(237,109,44,1) 100%);
+          width: 90%;
+          height: 80%; 
+          border-radius: 0 45% 45% 0;
+          overflow: hidden;
 }
-
-.shapes_container__right{
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  background: #EAA221;
-  width: 75%; 
-  height: 55%; 
-  border-radius: 0 0 60% 60%;
-  overflow: hidden;
-}
-.shapes_container__right--image{
+.shapes_container__left--image{
   position: relative; 
-  top: 31%;
-  left:-15%; 
+  top: 55%;
+  left:31%; 
   height: 70%; 
   width: auto; 
   background: url("../../assets/images/annaastle.png"); 
   background-size: contain; 
   background-repeat: no-repeat;
+}
+
+.shapes_container__right{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background:  linear-gradient(360deg, rgba(237,109,44,1) 0%, #e9d4bc 100%);
+  width: 75%; 
+  height: 55%; 
+  border-radius: 0 0% 60% 60%;
+  overflow: hidden;
 }
 
 .homebox_about {
@@ -61,67 +62,58 @@
 
 .homebox_tech {
   position: absolute;
-  bottom: 7%;
-  left: 3%;
+  bottom: 2%;
+  left: 2%;
   background-color: rgba(255, 255, 255, 0.603);
   border-radius: 15px;
+  z-index: 3;
 }
 
 .logo{
-  position: absolute; 
-  top: 25%; 
-  right: 0%; 
-  width: 40%; 
+  width: 70%; 
   height: auto; 
   border-radius: 50%;
-  z-index: 2; }
+  position: absolute;
+  left: 65%;
+  top: 50%; 
+  z-index: 2;
+  opacity: 0.35;
+  }
+  
 
 @media (min-width: 25.75rem) {
 }
 @media (min-width: 40rem) {
-   .shapes_container__right--image{
+   /* .shapes_container__left--image{
     top: 0%;
     left:-15%; 
     height: 120%; 
-}
-.logo{
-  top: 25%; 
-  right: 13%;
-  width: 30%;  
-}
+} */
 }
 
 @media (min-width: 50rem) {
-  .shapes_container__right--image{
-    top: 9%;
-    left:-20%; 
-    height: 120%; 
-}
-.logo{
-  right: 8%; 
-}
+
 }
 @media (max-aspect-ratio: 1/2){
-  .shapes_container__right--image{
+  /* .shapes_container__left--image{
     top: 47%;   
-} 
+}  */
   .homebox_about{
     top: 30%;
   }
 }
 @media (min-aspect-ratio: 1/1){
-  .shapes_container__right--image{
+  /* .shapes_container__left--image{
     top: 4%;
-    left: 5% 
-} 
+    left: 13% 
+}  */
   .homebox_about{
-    width: 102%;
-    top: 25%;
+    width: 65%;
+    top: 20%;
   }
   .logo{
-  right: 20%;
-  width: 22%;
-  max-width: 12rem;
-  top:18%; 
-}
+    width: 36%;
+    top: 52%;
+    left: 55%;
+  }
 }
