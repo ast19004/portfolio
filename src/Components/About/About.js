@@ -8,11 +8,11 @@ const About = (props) => {
         WEB DEVELOPER
       </span>
       <section>
-        <Box component="h1" className={`decorative font-large ${styles["about-webDev"]}`}>
-          <Box component="span" sx={{fontSize: '1.3rem', display: 'block', marginBottom: '-1rem'}}>Hi, I'm</Box>
+        <Box component="h1" className={`decorative font-large ${styles["about_text"]}`}>
+          <Box className={ styles.about_title} component="span" sx={{fontSize: '1.3rem', display: 'block', marginBottom: '-1rem'}}>Hi, I'm</Box>
           Anna Astle
         </Box>
-        <p>
+        <p className={styles.about_description}>
           I specialize in{" "}
           <b style={{ color: "#366b7c" }}>React and Node.js</b> and love to build
           dynamic and intuitive web applications that delight users.
