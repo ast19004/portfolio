@@ -26,11 +26,15 @@
   position: absolute;
   top: 0%;
   z-index: 2;
-  background: linear-gradient(180deg, #e9d4bc 0%, rgba(237,109,44,1) 100%);
+  background:
+        linear-gradient(180deg, rgb(233, 212, 188) 0%, rgb(237, 109, 44) 100%), 
+        url("../../assets/images/marigold.png") 13% 100%/auto no-repeat;
   width: 90%;
   height: 80%; 
   border-radius: 0 45% 45% 0;
   overflow: hidden;
+  background-blend-mode: multiply;
+
 }
 .designer_image{
   position: absolute;
@@ -41,6 +45,12 @@
   background: url("../../assets/images/annaastle.png"); 
   background-repeat: no-repeat;
   z-index: 3;
+}
+.marigold{
+  position: absolute;
+  width: 25%;
+  bottom: -35%;
+  left: 0%; 
 }
 
 .shapes_container__right{
@@ -70,17 +80,6 @@
   border-radius: 15px;
   z-index: 3;
 }
-
-.logo{
-  width: 70%; 
-  height: auto; 
-  border-radius: 50%;
-  position: absolute;
-  left: 65%;
-  top: 50%; 
-  z-index: 2;
-  opacity: 0.35;
-  }
   
 
 /* Portrait */
@@ -110,17 +109,12 @@
 /* Landscape */
 @media (min-aspect-ratio: 1/1){
   .homebox_about{
-    width: 65%;
+    width: 40%;
     top: 20%;
   }
   .designer_image{
     left: 48%;
     bottom: -10%;
-  }
-  .logo{
-    width: 36%;
-    top: 52%;
-    left: 55%;
   }
 }
 
