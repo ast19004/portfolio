@@ -101,15 +101,19 @@
 
 /* Portrait */
 @media(max-aspect-ratio: 1/1) and (max-width: 50rem){
-      .shapes_container__left{ 
-      border-radius: 0 60% 60% 60%;
+  .home{
+    height: calc(100vh - 60px);
+  }
+      .shapes_container__left{
+        width: 100%; 
+        border-radius: 0 45% 45% 35%;
 }
     .shapes_container__right{
       bottom: 25%;
-      left: 10%;
+      left: 1%;
       height: 60%;
       width: 100%;
-      border-radius: 60%;
+      border-radius: 80% 80% 25% 25%;
 }
 }
 @media (min-height: calc(1.5 * 100vw)) and (min-width: 50rem) {

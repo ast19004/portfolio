@@ -20,7 +20,7 @@ const ProjectDetails = (props) => {
           marginTop: "0.5rem",
         }}
       >
-        {!props.github2 ? <b>View My Code</b> : <b>View Frontend Code</b>}
+        {!props.github2 ? <b>View My Code</b> : <b>View Frontend</b>}
       </Link>
       {props.github2 && (
         <>
@@ -46,7 +46,7 @@ const ProjectDetails = (props) => {
               marginTop: "0.5rem",
             }}
           >
-            <b>View Backend Code</b>
+            <b>View Backend</b>
           </Link>
         </>
       )}
