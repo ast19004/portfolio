@@ -100,6 +100,18 @@
 }
 
 /* Portrait */
+@media(max-aspect-ratio: 1/1) and (max-width: 50rem){
+      .shapes_container__left{ 
+      border-radius: 0 60% 60% 60%;
+}
+    .shapes_container__right{
+      bottom: 25%;
+      left: 10%;
+      height: 60%;
+      width: 100%;
+      border-radius: 60%;
+}
+}
 @media (min-height: calc(1.5 * 100vw)) and (min-width: 50rem) {
     .homebox_about{
     width: 90%;
@@ -110,6 +122,9 @@
 
 /* Landscape */
 @media (min-aspect-ratio: 1/1){
+  .home{
+    height: calc(100vh - 50px);
+  }
   .shapes_container__left{
       background:
         linear-gradient(180deg, rgb(233, 212, 188) 0%, rgb(237, 109, 44) 100%), 
