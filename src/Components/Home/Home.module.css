@@ -68,7 +68,7 @@
 
 .homebox_tech {
   position: absolute;
-  bottom: -2%;
+  bottom: 0%;
   left: 1%;
   background-color: rgba(255, 255, 255, 0.603);
   border-radius: 15px;
@@ -114,10 +114,12 @@
     width: 100%;
     border-radius: 80% 80% 25% 25%;
 }
+
 }
-@media (min-height: calc(1.5 * 100vw)) and (min-width: 50rem) {
+@media (min-height: calc(2 * 100vw)) {
     .homebox_about{
-    width: 90%;
+    width: 85%;
+    top: 18vh;
   }
 }
 
@@ -156,6 +158,9 @@
 }
 
 @media(min-width: 80rem) and (min-aspect-ratio: 1/1){
+  .home{
+      height: calc(100vh - 20px);
+    }
     .shapes_container__left{
    background:
         linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 85%), 
