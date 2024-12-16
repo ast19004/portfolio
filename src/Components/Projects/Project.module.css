@@ -41,37 +41,6 @@
   margin: 0;
 }
 
-.project-details a {
-  color: white;
-}
-.project-details a {
-  background-color: #bb3c93;
-}
-
-.project-details a:hover {
-  background-color: white;
-}
-
-.project:nth-child(2) .project-details h2,
-.project:nth-child(2) .project-details a:hover {
-  color: #49c5b6;
-}
-.project:nth-child(3) .project-details h2,
-.project:nth-child(3) .project-details a:hover {
-  color: #ff8c00;
-}
-
-.project:first-child .project-details h2,
-.project:last-child .project-details h2,
-.project:first-child .project-details a:hover,
-.project:last-child .project-details a:hover {
-  color: #bb3c93;
-}
-
-.project-details a:hover {
-  color: #49c5b6;
-}
-
 @media (min-width: 59.7rem) {
   .project {
     position: relative;

@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <div className={styles.projects}>
       <Project
-        title="FIJIAN ANGELS"
+        title="Fijian Angels"
         description="Used Figma to create design wireframe and implemented user-friendly UIs using React and Material-UI, improving site navigation and user interaction.
 
 Developed fully responsive website with CSS Grid and Flexbox, ensuring optimal display on various devices and screen sizes.
@@ -53,9 +53,10 @@ Hosted using Heroku and connect to domain."
         github=""
         defaultSrc={fijianAngelsDefault}
         alt="Link to Fijian Angels Website"
+        themeColor="#ca4765e6"
       />
       <Project
-        title="READ READER"
+        title="Read Reader"
         description="Created with elementary school children and their guardians in mind, this application provides guardians with the ability to track the children's daily reading. Each child has their own personal account within the guardian's account and is able to 'pay' for rewards based on the amount of time they have read. It is up the main user/ guardian to create possible prizes and to decide upon how much time in reading will be required to redeem each prize."
         href="https://read-reader.herokuapp.com/"
         github="https://github.com/ast19004/ReadReader"
@@ -66,6 +67,7 @@ Hosted using Heroku and connect to domain."
         ]}
         defaultSrc={readReaderDefault}
         alt="Link to Read Reader Application"
+        themeColor="#49c5b6"
       >
         <Javascript />
         <React />
@@ -76,7 +78,7 @@ Hosted using Heroku and connect to domain."
       </Project>
 
       <Project
-        title="SCOOTZ"
+        title="Scootz"
         description="This fictitious Scooter Rental Website is built using the React library and demonstrates some playful use of CSS animations."
         href="https://ast19004.github.io/scootz/"
         github="https://github.com/ast19004/scootz/tree/main"
@@ -87,6 +89,7 @@ Hosted using Heroku and connect to domain."
         ]}
         defaultSrc={scootzDefault}
         alt="Link to Scootz Application"
+        themeColor="#ff8c00"
       >
         <Javascript />
         <React />
@@ -94,7 +97,7 @@ Hosted using Heroku and connect to domain."
       </Project>
 
       <Project
-        title="BRAIN STORM"
+        title="Brain Storm"
         description="
         This application was created as my individual final for my Javascript class during the beginning of my Web Development journey. Using data in the trivia API found at 'https://opentdb.com/api_config.php', I created a trivia game that allows an individual to select a certain category, test their knowledge, and get their score at the end. Beyond its demonstration of Javascript skill, this application is another demonstration of playful animation and styling."
         href="https://alouisa.github.io/WDD330/week14/triviaGame/"
@@ -106,6 +109,7 @@ Hosted using Heroku and connect to domain."
         ]}
         defaultSrc={brainstormDefault}
         alt="Link to Brain Storm Application"
+        themeColor="#bb3c93"
       >
         <HTML5 />
         <Javascript />

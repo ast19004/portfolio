@@ -1,23 +1,27 @@
-import { Link, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 import ProjectTechnologies from "./ProjectTechonologies";
 
 const ProjectDetails = (props) => {
   return (
     <section className={props.className}>
-      <h2 className="font-medium">{props.title}</h2>
+      <Box component="h2" className="font-medium" sx={{ color: props.themeColor ? props.themeColor : "blue",}}>{props.title}</Box>
       <p className="gray">{props.description}</p>
       <Link
         href={props.github}
         target="_blank"
-        color="#777"
+        color="white"
         underline="none"
         sx={{
           padding: "0.7rem",
-          background: "white",
           borderRadius: "1rem",
           boxShadow: "4px 4px 8px #8888886e",
           display: "inline-block",
           marginTop: "0.5rem",
+          backgroundColor: props.themeColor ? props.themeColor : "blue",
+          "&:hover": {
+            backgroundColor: "white",
+            color: props.themeColor ? props.themeColor : "blue"
+          }
         }}
       >
         {!props.github2 ? <b>View My Code</b> : <b>View Frontend</b>}
@@ -36,14 +40,18 @@ const ProjectDetails = (props) => {
           <Link
             href={props.github2}
             target="_blank"
-            color="#777"
+            color="white"
             underline="none"
             sx={{
               padding: "0.7rem",
-              background: "white",
               borderRadius: "1rem",
               boxShadow: "4px 4px 8px #8888886e",
               marginTop: "0.5rem",
+              backgroundColor: props.themeColor ? props.themeColor : "blue",
+              "&:hover": {
+                backgroundColor: "white",
+                color: props.themeColor ? props.themeColor : "blue"
+              }
             }}
           >
             <b>View Backend</b>

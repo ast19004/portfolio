@@ -20,6 +20,8 @@ const Project = (props) => {
         technologies={props.children}
         github={props.github}
         github2={props.github2}
+        mainColor={props.mainColor}
+        themeColor={ props.themeColor}
       />
     </div>
   );

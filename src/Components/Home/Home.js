@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 
 import About from "../About/About";
 import Technologies from "../Technologies/Technologies";
-import marigold from '../../assets/images/marigold.png';
 import styles from "./Home.module.css";
 import { Box } from "@mui/material";
 import ScrollDownIcon from "@mui/icons-material/South";
@@ -22,6 +21,7 @@ const Home = () => {
   }, [inView]);
 
   return (
+    // TODO: // Change over to end before face, orange to white, text match, pull pink, non all caps titles
     <Box ref={ref} className={styles.home}>
       <Box
         className={inViewStyle}
