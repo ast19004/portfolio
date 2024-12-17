@@ -24,13 +24,13 @@
 }
 .shapes_container__left{
   position: absolute;
-  top: 0%;
+  top: 5%;
   z-index: 2;
   background:
       linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 85%), 
       url("../../assets/images/marigold.png") 13% 100%/auto no-repeat;
   width: 90%;
-  height: 70%; 
+  height: 50%; 
   border-radius: 0 45% 45% 0;
   overflow: hidden;
   background-blend-mode: multiply;
@@ -54,7 +54,7 @@
   background:  linear-gradient(360deg, rgba(237,109,44,1) 0%, #f1f1f1 80%);
   width: 75%; 
   height: 55%; 
-  border-radius: 0 0% 60% 60%;
+  border-radius: 60%;
   overflow: hidden;
 }
 
@@ -105,9 +105,9 @@
     width: 77%;
     height: 55%; 
     border-radius: 0 45% 45% 35%;
-      background:
-      linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 110%), 
-      url("../../assets/images/marigold.png") 53% 105%/25% no-repeat;
+        background:
+      linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 80%), 
+      url("../../assets/images/marigold.png") 70% 90%/25% no-repeat;
 }
   .shapes_container__right{
     top: 60%;
@@ -124,7 +124,7 @@
   }
   .homebox_about{
     width: 85%;
-    top: 7vh;
+    top: 4vh;
   }
   .designer_image{
     top: 45%;
@@ -132,8 +132,8 @@
 }
 @media (min-height: calc(2.2 * 100vw)) {
  .shapes_container__left{
-    height: 40%;
-  } 
+    height: 35%;
+  }
 }
 
 
