@@ -13,8 +13,8 @@ const About = (props) => {
           Anna Astle
         </Box>
         <p className={styles.about_description}>
-          I specialize in{" "}
-          <b style={{ color: "#366b7c" }}>React and Node.js</b> and love to build
+          I specialize in the{" "}
+          <b style={{ color: "#366b7c" }}>Javascript ecosystem</b> and love to build
           dynamic and intuitive web applications that delight users.
         </p>
       </section>
