@@ -5,9 +5,9 @@ import LaunchIcon from "@mui/icons-material/Launch";
 const Explore = (props) => {
   return (
     <Box component="span" className={props.className}>
-      <LaunchIcon fontSize="small" />
+      <LaunchIcon fontSize="medium" />
       &nbsp;
-      <Typography fontSize="medium">Visit</Typography>
+      <Typography fontSize="large">Visit</Typography>
     </Box>
   );
 };
