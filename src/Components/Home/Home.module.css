@@ -116,6 +116,9 @@
     width: 100%;
     border-radius: 95% 0% 0% 0%;
 }
+  .homebox_tech{
+    bottom: 2%;
+  }
 
 }
 @media (min-height: calc(2 * 100vw)) {
@@ -133,9 +136,6 @@
 @media (min-height: calc(2.2 * 100vw)) {
  .shapes_container__left{
     height: 35%;
-  }
-  .homebox_tech{
-    bottom: 2%;
   }
 }
 
