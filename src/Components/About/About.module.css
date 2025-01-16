@@ -3,6 +3,9 @@
   line-height: 2.3rem;
   color: #366b7c;
 }
+.about_description{
+  color: #366b7c;
+}
 .about ul li {
   color: rgb(90, 90, 90);
 }

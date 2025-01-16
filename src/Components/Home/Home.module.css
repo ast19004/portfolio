@@ -27,7 +27,7 @@
   top: 5%;
   z-index: 2;
   background:
-      linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 85%), 
+      /* linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 85%),  */
       url("../../assets/images/marigold.png") 13% 100%/auto no-repeat;
   width: 90%;
   height: 50%; 
@@ -101,12 +101,12 @@
     height: calc(100vh - 70px);
   }
   .shapes_container__left{
-    top: 5%;
-    width: 77%;
+    top: -4%;
+    width: 120%;
     height: 55%; 
     border-radius: 0 45% 45% 35%;
         background:
-      linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 80%), 
+      /* linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 80%),  */
       url("../../assets/images/marigold.png") 70% 90%/25% no-repeat;
 }
   .shapes_container__right{
@@ -150,7 +150,7 @@
       width: 55%;
       height: 75%;
       background:
-        linear-gradient(180deg, rgb(233, 212, 188) 0%, rgb(237, 109, 44) 100%), 
+        /* linear-gradient(180deg, rgb(233, 212, 188) 0%, rgb(237, 109, 44) 100%),  */
         url("../../assets/images/marigold.png") 90% 35%/30% no-repeat;
   }
   .shapes_container__right{
@@ -180,7 +180,7 @@
     }
     .shapes_container__left{
    background:
-        linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 85%), 
+        /* linear-gradient(360deg, #f1f1f1 0%, rgb(237, 109, 44) 85%),  */
         url("../../assets/images/marigold.png") 13% 110%/auto no-repeat;
   }
   .designer_image{

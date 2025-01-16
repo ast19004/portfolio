@@ -14,7 +14,7 @@ const About = (props) => {
         </Box>
         <p className={styles.about_description}>
           I specialize in the{" "}
-          <b style={{ color: "#366b7c" }}>Javascript ecosystem</b> and love to build
+          <b style={{ color: "rgb(237, 109, 44)" }}>Javascript ecosystem</b> and love to build
           dynamic and intuitive web applications that delight users.
         </p>
       </section>
