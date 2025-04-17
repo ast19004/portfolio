@@ -17,12 +17,13 @@ const ProjectThumbnail = (props) => {
     return () => setInViewStyle("");
   }, [inView]);
   return (
-    <a
+    <Box component="a"
       ref={ref}
       className={props.className}
       href={props.href}
       target="_blank"
       rel="noreferrer"
+      sx={props.sx}
     >
       <Box sx={{ position: "relative" }}>
         {props.srcList ? (
@@ -39,7 +40,7 @@ const ProjectThumbnail = (props) => {
         )}
         <Explore className={inViewStyle} />
       </Box>
-    </a>
+    </Box>
   );
 };
 
