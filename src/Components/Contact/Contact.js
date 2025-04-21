@@ -3,13 +3,13 @@ import styles from "./Contact.module.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const Contact = () => {
+const Contact = (props) => {
   const currentDate = new Date();
   return (
-    <footer>
+    <Box component="footer" sx={ props.sx}>
       <ul className={styles.contact}>
         <li>
           {" "}
@@ -18,7 +18,7 @@ const Contact = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <LinkedInIcon fontSize="large" sx={{ color: "#222" }} />
+            <LinkedInIcon fontSize="large" sx={{ color: "whitesmoke", filter: 'drop-shadow(6px 6px 4px black)' }} />
           </a>
         </li>
 
@@ -29,7 +29,7 @@ const Contact = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <GitHubIcon fontSize="large" sx={{ color: "#222" }} />
+            <GitHubIcon fontSize="large" sx={{ color: "whitesmoke", filter: 'drop-shadow(6px 6px 4px black)' }} />
           </a>
         </li>
         <li>
@@ -37,11 +37,11 @@ const Contact = () => {
             className={styles["contact-email"]}
             href="mailto:annaastle5@gmail.com"
           >
-            <EmailIcon fontSize="large" sx={{ color: "#222" }} />
+            <EmailIcon fontSize="large" sx={{ color: "whitesmoke", filter: 'drop-shadow(6px 6px 4px black)' }} />
           </a>
         </li>
       </ul>
-      <a
+      {/* <a
         className={styles.viewCode}
         href="https://github.com/ast19004/portfolio/tree/portfolio-v2"
         target="_blank"
@@ -56,8 +56,8 @@ const Contact = () => {
         >
           Anna Astle {currentDate.getFullYear()}
         </Typography>
-      </a>
-    </footer>
+      </a> */}
+    </Box>
   );
 };
 

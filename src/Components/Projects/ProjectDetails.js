@@ -5,7 +5,7 @@ const ProjectDetails = (props) => {
   return (
     <section className={props.className}>
       <Box component="h2" className="font-medium" sx={{ color: props.themeColor ? props.themeColor : "blue",}}>{props.title}</Box>
-      <p className="gray">{props.description}</p>
+      <p>{props.description}</p>
       <Link
         href={props.github}
         target="_blank"

@@ -1,0 +1,28 @@
+.slider-container {
+  justify-self: flex-end;
+  align-self: flex-end;
+  /* width: auto; */
+  max-height: 100vh;
+  /* overflow: hidden; */
+  /* position: relative; */
+}
+
+.slider-image {
+  max-width: 66vw;
+  max-height: 90vh;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* .slider-image {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+} */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+

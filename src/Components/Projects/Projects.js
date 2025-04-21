@@ -19,21 +19,21 @@ import {
   Sass,
 } from "../Technologies/TechIcons";
 
-import fijianAngelsDefault from "../../assets/images/fijianangels/fijian_angels.jpg";
+import fijianAngels500px from '../../assets/images/fijianangels/fijianangels500px.png';
+import fijianAngels900px from '../../assets/images/fijianangels/fijianangels900px.png';
+import fijianAngelsDefault from "../../assets/images/fijianangels/fijianangels948px.png";
 
-import readReader550px from "../../assets/images/readreader/readreader-550px.jpg";
-import readReader850px from "../../assets/images/readreader/readreader-850px.jpg";
-import readReaderDefault from "../../assets/images/readreader/readreader.jpg";
+import readReader500px from "../../assets/images/readreader/readreader500px.png";
+import readReader900px from "../../assets/images/readreader/readreader900px.png";
+import readReaderDefault from "../../assets/images/readreader/readreader1094px.png";
 
-import scootz550px from "../../assets/images/scootz/scootz-550px.jpg";
-import scootz850px from "../../assets/images/scootz/scootz-850px.jpg";
-import scootz1200px from "../../assets/images/scootz/scootz-1200px.jpg";
-import scootzDefault from "../../assets/images/scootz/scootz.jpg";
+import scootz550px from "../../assets/images/scootz/scootz500px.png";
+import scootz900px from "../../assets/images/scootz/scootz900px.png";
+import scootzDefault from "../../assets/images/scootz/scootz1250px.png";
 
-import brainstorm550px from "../../assets/images/brainstorm/brainstorm-550px.jpg";
-import brainstorm850px from "../../assets/images/brainstorm/brainstorm-850px.jpg";
-import brainstorm1200px from "../../assets/images/brainstorm/brainstorm-1200px.jpg";
-import brainstormDefault from "../../assets/images/brainstorm/brainstorm.jpg";
+import brainstorm500px from "../../assets/images/brainstorm/brainstorm500px.png";
+import brainstorm900px from "../../assets/images/brainstorm/brainstorm900px.png";
+import brainstormDefault from "../../assets/images/brainstorm/brainstorm1250px.png";
 
 const Projects = () => {
   return (
@@ -51,6 +51,10 @@ Applied Material-UI components to create scalable, customizable design systems t
 Hosted using Heroku and connect to domain."
         href="https://www.fijianangels.com"
         github=""
+        srcList={[
+          { media: "(max-width: 550px)", srcSet: fijianAngels500px},
+          { media: "(max-width: 850px)", srcSet: fijianAngels900px },
+        ]}
         defaultSrc={fijianAngelsDefault}
         alt="Link to Fijian Angels Website"
         themeColor="#ca4765e6"
@@ -62,8 +66,8 @@ Hosted using Heroku and connect to domain."
         github="https://github.com/ast19004/ReadReader"
         github2="https://github.com/ast19004/ReadReader-server"
         srcList={[
-          { media: "(max-width: 550px)", srcSet: readReader550px },
-          { media: "(max-width: 850px)", srcSet: readReader850px },
+          { media: "(max-width: 500px)", srcSet: readReader500px },
+          { media: "(max-width: 850px)", srcSet: readReader900px },
         ]}
         defaultSrc={readReaderDefault}
         alt="Link to Read Reader Application"
@@ -84,8 +88,7 @@ Hosted using Heroku and connect to domain."
         github="https://github.com/ast19004/scootz/tree/main"
         srcList={[
           { media: "(max-width: 550px)", srcSet: scootz550px },
-          { media: "(max-width: 850px)", srcSet: scootz850px },
-          { media: "(max-width: 1200px)", srcSet: scootz1200px },
+          { media: "(max-width: 850px)", srcSet: scootz900px },
         ]}
         defaultSrc={scootzDefault}
         alt="Link to Scootz Application"
@@ -103,9 +106,8 @@ Hosted using Heroku and connect to domain."
         href="https://alouisa.github.io/WDD330/week14/triviaGame/"
         github="https://github.com/alouisa/alouisa.github.io/tree/master/WDD330/week14/triviaGame"
         srcList={[
-          { media: "(max-width: 550px)", srcSet: brainstorm550px },
-          { media: "(max-width: 850px)", srcSet: brainstorm850px },
-          { media: "(max-width: 1200px)", srcSet: brainstorm1200px },
+          { media: "(max-width: 500px)", srcSet: brainstorm500px },
+          { media: "(max-width: 850px)", srcSet: brainstorm900px },
         ]}
         defaultSrc={brainstormDefault}
         alt="Link to Brain Storm Application"
