@@ -72,7 +72,7 @@ const Home = () => {
         images={prjImages}
         interval={6000}
       />  */}
-      <ProjectCarousel projects={projectList} />
+      <ProjectCarousel projects={projectList} intervalValue={10000}/>
       
       {/* TODO: Move Contact to bottom right on portrait */}
       <Contact sx={{ position: 'absolute', bottom: 0}} />

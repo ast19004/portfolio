@@ -1,13 +1,21 @@
 .project {
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin: 15% 2%;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  margin: 2%;
+  background-color: rgba(255,255,255,0.1);
 }
 
 .project-thumbnail {
   display: block;
-  max-height: 50vh;
+}
+.project-thumbnail img{
+  height: auto;
+  width: 100vw;
+  max-height: 100%;
+  max-width: 100%;
 }
 .project-thumbnail span {
   z-index: 5;
@@ -28,15 +36,15 @@
   right: 34%; */
 }
 .project-details {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  bottom: 5rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   /* border: 1px solid #0000001a; */
   /* -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px); */
   min-width: 15.6rem;
-  max-width: 75%;
+  max-width: 96%;
   text-align: left;
   border-radius: 15px;
   padding: 2%;
@@ -44,6 +52,25 @@
 }
 .project-details h2 {
   margin: 0;
+}
+
+@media (min-aspect-ratio: 3/2),(min-width: 59.7rem) {
+  .project{
+    padding: 1%;
+    top: 0;
+    left: 5vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .project-thumbnail img{
+    /* Styles for wide screens */
+    width: 60vw;
+    height: auto;
+  }
+  .project-details{
+    max-width: 75vw;
+  }
 }
 
 @media (min-width: 59.7rem) {

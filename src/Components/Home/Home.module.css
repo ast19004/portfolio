@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   height: 100vh;
-  width: 100;
+  width: 100vw;
   background: black;
   /* background-image: url(../../assets/images/AdobeStock_949051902.jpeg); */
   /* background-size: cover; */
@@ -17,9 +17,4 @@
   /* line-height: 1.2;
   transform: scaleY(1.4); 
   display: inline-block; */
-}
-.home_img{
-  max-height: 100%;
-  height: auto;
-  /* filter: grayscale(1);  */
 }

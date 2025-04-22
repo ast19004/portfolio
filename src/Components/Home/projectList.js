@@ -49,7 +49,7 @@ const projects = [
           { media: "(max-width: 550px)", srcSet: fijianAngels500px },
           { media: "(max-width: 850px)", srcSet: fijianAngels900px },
         ],
-      defaultSrc: { fijianAngelsDefault },
+      defaultSrc: fijianAngelsDefault,
       alt: "Link to Fijian Angels Website",
       themeColor: "#ca4765e6"
     }
@@ -66,7 +66,7 @@ const projects = [
         { media: "(max-width: 500px)", srcSet: readReader500px },
         { media: "(max-width: 850px)", srcSet: readReader900px },
       ],
-      defaultSrc: { readReaderDefault },
+      defaultSrc: readReaderDefault,
       alt: "Link to Read Reader Application",
       themeColor: "#49c5b6"
     }
@@ -82,7 +82,7 @@ const projects = [
         { media: "(max-width: 550px)", srcSet: scootz550px },
         { media: "(max-width: 850px)", srcSet: scootz900px },
       ],
-      defaultSrc: { scootzDefault },
+      defaultSrc: scootzDefault ,
       alt: "Link to Scootz Application",
       themeColor: "#ff8c00",
     }
@@ -98,7 +98,7 @@ const projects = [
           { media: "(max-width: 500px)", srcSet: brainstorm500px },
           { media: "(max-width: 850px)", srcSet: brainstorm900px },
       ],
-      defaultSrc: { brainstormDefault },
+      defaultSrc: brainstormDefault ,
       alt: "Link to Brain Storm Application",
       themeColor: "#bb3c93"
     }

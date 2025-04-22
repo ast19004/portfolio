@@ -7,7 +7,7 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-const ProjectCarousel = ({ projects}) => {
+const ProjectCarousel = ({ projects, intervalValue = 4000}) => {
   const [[index, direction], setIndex] = useState([0, 0]);
 
   const paginate = (newDirection) => {
@@ -19,7 +19,7 @@ const ProjectCarousel = ({ projects}) => {
 
   // Auto-slide every 4 seconds
   useEffect(() => {
-    const interval = setInterval(() => paginate(1), 4000);
+    const interval = setInterval(() => paginate(1), intervalValue);
     return () => clearInterval(interval);
   }, []);
 
@@ -70,14 +70,14 @@ const ProjectCarousel = ({ projects}) => {
       </div>
 
       {/* Optional navigation buttons */}
-      <div className="">
+      {/* <div className="">
         <button onClick={() => paginate(-1)} className="px-4 py-2 bg-gray-200 rounded">
           Prev
         </button>
         <button onClick={() => paginate(1)} className="px-4 py-2 bg-gray-200 rounded">
           Next
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
