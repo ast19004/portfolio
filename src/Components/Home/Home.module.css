@@ -11,9 +11,16 @@
 .home_name{
   position: absolute;
   top: 1rem;
+  right: 2%;
   z-index: 2;
   font-size: 6rem;
   font-family: "Antonio", sans-serif;
+  color: whitesmoke;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: right;
   /* line-height: 1.2;
   transform: scaleY(1.4); 
   display: inline-block; */

@@ -11,6 +11,7 @@ const Project = (props) => {
         href={props.href}
         srcList={props.srcList}
         defaultSrc={props.defaultSrc}
+        themeColor={ props.themeColor}
         alt={props.alt}
       />
       <ProjectDetails

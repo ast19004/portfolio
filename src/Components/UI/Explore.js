@@ -4,10 +4,10 @@ import LaunchIcon from "@mui/icons-material/Launch";
 
 const Explore = (props) => {
   return (
-    <Box component="span" className={props.className}>
-      <LaunchIcon fontSize="medium" />
+    <Box component="span" className={props.className} sx={props.sx}>
+      <LaunchIcon fontSize="large" sx={{ color: 'white',}} />
       &nbsp;
-      <Typography fontSize="large">Visit</Typography>
+      <Typography fontSize="large"></Typography>
     </Box>
   );
 };

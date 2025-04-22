@@ -23,7 +23,7 @@ const ProjectThumbnail = (props) => {
       href={props.href}
       target="_blank"
       rel="noreferrer"
-      sx={props.sx}
+      sx={{ cursor: 'pointer' ,...props.sx }}
     >
       <Box sx={{ position: "relative" }}>
         {props.srcList ? (
@@ -38,7 +38,7 @@ const ProjectThumbnail = (props) => {
         ) : (
           <img src={props.defaultSrc} alt={props.alt} />
         )}
-        <Explore className={inViewStyle} />
+        <Explore className={inViewStyle} themeColor={ props.themeColor} />
       </Box>
     </Box>
   );

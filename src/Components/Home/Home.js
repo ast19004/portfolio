@@ -37,14 +37,7 @@ const Home = () => {
         color="whitesmoke"
         sx={{ display: 'block', position: 'absolute', top: '2%', left: '2%'}}
       />
-        <Box component="h1" className={`${styles.home_name}`} sx={{
-          color: 'whitesmoke',
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '0.2rem',
-          textAlign: 'right',
-        }}>
+        <Box component="h1" className={`${styles.home_name}`}>
           <Box
             component="span"
           sx={{

@@ -6,6 +6,7 @@
   left: 0;
   margin: 2%;
   background-color: rgba(255,255,255,0.1);
+  border-radius: 15px;
 }
 
 .project-thumbnail {
@@ -18,15 +19,16 @@
   max-width: 100%;
 }
 .project-thumbnail span {
+  position: absolute;
+  top: 0%;
+  left: 2%;
   z-index: 5;
-  opacity: 0;
   display: flex;
   align-items: center;
+  opacity: 0;
   padding: 0.3rem;
-  position: absolute;
-  top: 10.5%;
-  right: 10.3%;
-  background-color: #0c77ff;
+  padding-left: 0.5rem;
+  background:rgb(0,0,0);
   color: white;
   border-radius: 10px;
   box-shadow: 5px 4px 8px #888888;
