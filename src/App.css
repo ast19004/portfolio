@@ -38,6 +38,16 @@ body {
   opacity: 0.5;
 }
 
+.nav_main a:hover{
+  text-decoration: none;
+  color: whitesmoke;
+  opacity: 1;
+}
+.nav_main a.active{
+  text-decoration: underline rgb(255, 255, 255, 0.6);
+  opacity: 0.7
+}
+
 img {
   display: block;
   max-width: 100%;
