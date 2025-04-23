@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, transform } from 'framer-motion';
 
 
 const swipeConfidenceThreshold = 10000;
@@ -27,14 +27,17 @@ const ProjectCarousel = ({ projects, intervalValue = 4000}) => {
     enter: (dir) => ({
       x: dir > 0 ? 100 : -100,
       opacity: 0,
+      transform: 'transitionX(200vw)',
     }),
     center: {
       x: 0,
       opacity: 1,
+      transform: 'transitionX(0)'
     },
     exit: (dir) => ({
       x: dir > 0 ? -100 : 100,
       opacity: 0,
+      transform: 'transitionX(-200vw)'
     }),
   };
   const { Component, props } = projects[index]; 

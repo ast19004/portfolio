@@ -13,6 +13,7 @@ import Contact from "../Contact/Contact";
 import ProjectCarousel from "../UI/Carousel/ProjectCarousel";
 import projectList from "./projectList";
 
+
 const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [inViewStyle, setInViewStyle] = useState("");
@@ -31,34 +32,15 @@ const Home = () => {
     // TODO: // Change over to end before face, orange to white, text match, pull pink, non all caps titles
     <Box ref={ref} className={styles.home}>
 
+      {/* <Box className={styles.menu}>
       <Hamburger
+        className={ styles.hamburger}
         toggled={menuOpen}
         toggle={setMenuOpen}
         color="whitesmoke"
-        sx={{ display: 'block', position: 'absolute', top: '2%', left: '2%'}}
       />
-        <Box component="h1" className={`${styles.home_name}`}>
-          <Box
-            component="span"
-          sx={{
-            letterSpacing: '2rem',
-            filter: 'drop-shadow(6px 6px 4px black)'
-          }}
-          >
-            Anna
-          </Box>
-          <Box
-            component="span"
-          sx={{
-              alignSelf: 'flex-end',
-              display: 'inline-block',
-              writingMode: 'vertical-lr',
-              textOrientation: 'upright',
-              letterSpacing: '-1rem',
-              marginRight: '1.5rem',
-              filter: 'drop-shadow(6px 6px 4px black)'
-            }}>stle</Box>
-      </Box>
+      </Box> */}
+      
 
       {/* <ImageSlider
         className={styles.home_img}
@@ -68,7 +50,6 @@ const Home = () => {
       <ProjectCarousel projects={projectList} intervalValue={10000}/>
       
       {/* TODO: Move Contact to bottom right on portrait */}
-      <Contact sx={{ position: 'absolute', bottom: 0}} />
       {/* <Box sx={{
         position: 'relative', top: '0%',
       }}>

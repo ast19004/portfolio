@@ -25,6 +25,19 @@ body {
   color: #585858;
 }
 
+.nav_main{
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  z-index: 5;
+}
+
+.nav_main a{
+  text-decoration: none;
+  color: whitesmoke;
+  opacity: 0.5;
+}
+
 img {
   display: block;
   max-width: 100%;

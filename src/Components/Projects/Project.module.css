@@ -1,12 +1,14 @@
 .project {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 15%;
-  left: 0;
+  position: absolute;
+  top: 12%;
+  left: 2%;
   margin: 2%;
-  background-color: rgba(255,255,255,0.1);
   border-radius: 15px;
+  max-width: 80%;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
 }
 
 .project-thumbnail {
@@ -14,24 +16,24 @@
 }
 .project-thumbnail img{
   height: auto;
-  width: 100vw;
+  width: 60vw;
   max-height: 100%;
   max-width: 100%;
+  opacity: 0.8;
 }
 .project-thumbnail span {
   position: absolute;
-  top: 0%;
-  left: 2%;
+  top: 12%;
+  right: 12%;
   z-index: 5;
   display: flex;
   align-items: center;
   opacity: 0;
-  padding: 0.3rem;
-  padding-left: 0.5rem;
-  background:rgb(0,0,0);
-  color: white;
+  padding: 0.1rem;
+  padding-left: 0.3rem;
+  background:black;
   border-radius: 10px;
-  box-shadow: 5px 4px 8px #888888;
+  opacity: 0.75 !important;
 }
 .project:last-child .project-thumbnail span {
   /* top: 18%;
@@ -39,14 +41,14 @@
 }
 .project-details {
   position: fixed;
-  bottom: 5rem;
+  bottom: 10rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
   /* border: 1px solid #0000001a; */
   /* -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px); */
   min-width: 15.6rem;
-  max-width: 96%;
+  max-width: 85%;
   text-align: left;
   border-radius: 15px;
   padding: 2%;
@@ -57,21 +59,19 @@
 }
 
 @media (min-aspect-ratio: 3/2),(min-width: 59.7rem) {
+  /* Styles for wide screens */
   .project{
     padding: 1%;
-    top: 0;
-    left: 5vw;
+    left: 15%;
     margin-top: 1%;
     margin-bottom: 1%;
-    background-color: rgba(255,255,255,0.1);
   }
   .project-thumbnail img{
-    /* Styles for wide screens */
-    width: 60vw;
     height: auto;
   }
   .project-details{
     max-width: 75vw;
+    bottom: 5rem;
   }
 }
 

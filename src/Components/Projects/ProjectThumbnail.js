@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 import { Box } from "@mui/material";
 import Explore from "../UI/Explore";
+import Picture from "../UI/Picture";
 
 const ProjectThumbnail = (props) => {
   const [inViewStyle, setInViewStyle] = useState("");
