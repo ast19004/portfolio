@@ -41,10 +41,10 @@ function App() {
       {/* <hr className="page-break" id="contact"></hr> */}
       {/* <Contact /> */}
       <footer>
-        <span style={{ position: "absolute", bottom: "8%", color: "whitesmoke", opacity: '0.3',fontSize: "0.88rem",  }}>
+        <span style={{ position: "fixed", bottom: "8%", color: "whitesmoke", opacity: '0.3',fontSize: "0.88rem",  }}>
           WEB DEVELOPER
         </span>
-        <Contact sx={{ position: 'absolute', bottom: 0, left: '0%'}} />
+        <Contact sx={{ position: 'fixed', bottom: 0, left: '0%'}} />
       </footer>
     </div>
   );
