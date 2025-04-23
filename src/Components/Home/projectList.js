@@ -44,7 +44,7 @@ const projects = [
     Component: Project,
     props: {
       title: "Fijian Angels",
-      description: <><p style={{ ...paragraphStyle, padding: '0.5rem 0' }}>Growing Home Healthcare company, Fijian Angels, is broading their online presence. This is their first website.</p><p>TEAM: <span style={ spanStyle}>Myself (Web Developer), the CEO, the COO and the company's Media Manager</span></p><p>WIREFRAME: <span style={ spanStyle}>Figma</span></p><p>TECH: <span style={ spanStyle}>React, MaterialUI, CSS, Node.js, MongoDB, Mongoose, EmailJS, Firebase, & Heroku</span></p></>,
+      description: <><p style={{ ...paragraphStyle, padding: '0.5rem 0' }}>Growing Home Healthcare company, Fijian Angels, is broading their online presence. This is their first website.</p><p>TEAM: <span style={ spanStyle}>Myself (Web Developer), the CEO, the COO and the company's Media Manager</span></p><p>WIREFRAME:<span style={ spanStyle}>Figma</span></p><p>TECH: <span style={ spanStyle}>React, MaterialUI, CSS, Node.js, MongoDB, Mongoose, EmailJS, Firebase, & Heroku</span></p></>,
       href: "https://www.fijianangels.com",
       github: "https://github.com/ast19004/fijianangels-client.git",
       srcList:
@@ -61,7 +61,7 @@ const projects = [
     Component: Project,
     props: {
       title: "Read Reader",
-      description:<><p style={{ ...paragraphStyle, padding: '0.5rem 0' }}>Read Reader, a personal project, is a reward-based reading tracker for children.<br/>Children are able to 'pay' for guardian set rewards based on the amount of time they have read.</p><p>TEAM: <span style={ spanStyle}>Myself (Web Developer) & my mentor Taylor Parcel (Web Developer @ UCBerkeley)</span></p><p>WIREFRAME: <span style={ spanStyle}>draw.io via Google Drive</span></p><p>TECH: <span style={ spanStyle}>React, MaterialUI, CSS, Node.js, MongoDB, Mongoose, & Heroku</span></p></>,
+      description:<><p style={{ ...paragraphStyle, padding: '0.5rem 0' }}>Read Reader, a personal project, is a reward-based reading tracker for children.<br/>Children are able to 'pay' for guardian set rewards based on the amount of time they have read.</p><p>TEAM: <span style={ spanStyle}>Myself (Web Developer) & mentor Taylor Parcel (Web Developer @ UCBerkeley)</span></p><p>WIREFRAME: <span style={ spanStyle}>draw.io via Google Drive</span></p><p>TECH: <span style={ spanStyle}>React, MaterialUI, CSS, Node.js, MongoDB, Mongoose, & Heroku</span></p></>,
       href: "https://read-reader.herokuapp.com/",
       github: "https://github.com/ast19004/ReadReader",
       github2: "https://github.com/ast19004/ReadReader-server",

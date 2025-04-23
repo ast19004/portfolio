@@ -6,15 +6,18 @@ import { Box } from "@mui/material";
 import About from './Components/About/About';
 
 import styles from './Components/Home/Home.module.css';
+import { useState } from "react";
 
 function App() {
+  const [toggleActive, setToggleActive] = useState(true);
+
   return (
     <div className="App">
       <header>
       {/* Navigation */}
         <nav className="nav_main">
-          <Link to="/">Home</Link> . {" "}
-          <Link to="/about">About</Link>{" "}
+          <Link to="/" onClick={() => { setToggleActive(prevState => !prevState)}}  className={ `${toggleActive && "active"}`}>Projects</Link> . {" "}
+          <Link to="/about" onClick={() => { setToggleActive(prevState => !prevState)}} className={ `${!toggleActive && "active"}`}>About</Link>{" "}
         </nav>
               <Box component="h1" className={`${styles.home_name}`}>
           <Box
