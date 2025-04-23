@@ -46,7 +46,7 @@ const projects = [
       title: "Fijian Angels",
       description: <><p style={{ ...paragraphStyle, padding: '0.5rem 0' }}>Growing Home Healthcare company, Fijian Angels, is broading their online presence. This is their first website.</p><p>TEAM: <span style={ spanStyle}>Myself (Web Developer), the CEO, the COO and the company's Media Manager</span></p><p>WIREFRAME: <span style={ spanStyle}>Figma</span></p><p>TECH: <span style={ spanStyle}>React, MaterialUI, CSS, Node.js, MongoDB, Mongoose, EmailJS, Firebase, & Heroku</span></p></>,
       href: "https://www.fijianangels.com",
-      github: "",
+      github: "https://github.com/ast19004/fijianangels-client.git",
       srcList:
         [
           { media: "(max-width: 550px)", srcSet: fijianAngels500px },
