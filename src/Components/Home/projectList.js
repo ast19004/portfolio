@@ -61,7 +61,6 @@ const projects = [
     Component: Project,
     props: {
       title: "Read Reader",
-      description:<><p style={{ ...paragraphStyle, padding: '0.5rem 0' }}>Read Reader, a personal project, is a reward-based reading tracker for children.<br/>Children are able to 'pay' for guardian set rewards based on the amount of time they have read.</p><p>TEAM: <span style={ spanStyle}>Myself (Web Developer) & mentor Taylor Parcel (Web Developer @ UCBerkeley)</span></p><p>WIREFRAME: <span style={ spanStyle}>draw.io via Google Drive</span></p><p>TECH: <span style={ spanStyle}>React, MaterialUI, CSS, Node.js, MongoDB, Mongoose, & Heroku</span></p></>,
       href: "https://read-reader.herokuapp.com/",
       github: "https://github.com/ast19004/ReadReader",
       github2: "https://github.com/ast19004/ReadReader-server",
@@ -71,7 +70,9 @@ const projects = [
       ],
       defaultSrc: readReaderDefault,
       alt: "Link to Read Reader Application",
-      themeColor: "#49c5b6"
+      themeColor: "#49c5b6",
+      description:<><p style={{ ...paragraphStyle, padding: '0.5rem 0' }}>Read Reader, a personal project, is a reward-based reading tracker for children.<br/>Children are able to 'pay' for guardian set rewards based on the amount of time they have read.</p><p><span>TEAM: </span><span style={ spanStyle}>Myself (Web Developer) & mentor Taylor Parcel (Web Developer @ UCBerkeley)</span></p><p>WIREFRAME: <span style={ spanStyle}>draw.io via Google Drive</span></p><p>TECH: <span style={ spanStyle}>React, MaterialUI, CSS, Node.js, MongoDB, Mongoose, & Heroku</span></p></>,
+
     }
   },
   {
