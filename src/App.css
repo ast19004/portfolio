@@ -107,6 +107,17 @@ footer{
   background-color: rgba(0,0,0,0.5);
   border-radius: 5rem;
 }
+footer span{
+  position: fixed;
+  bottom: 8%;
+  color: whitesmoke;
+  font-size: 0.88rem;  
+}
+.contact{
+   position: fixed; 
+   bottom: 0; 
+   left: 0%;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
