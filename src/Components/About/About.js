@@ -2,12 +2,13 @@ import { Box, Typography, List, ListItem} from "@mui/material";
 
 import AnnaImg from '../../assets/images/annaastle.png';
 import oneYear from '../../assets/images/about/oneYear.png';
+import styles from './About.module.css';
 
 const About = (props) => {
   return (
     <Box>
-      <Box sx={{ position: 'relative', zIndex: '1', margin:'2%',maxWidth: 800, mx: 'auto', p: 4, color: 'whitesmoke',}}>
-      <Box sx={{ background: 'rgba(50,50,50,0.5)',  padding: '5%', borderRadius: '50%', width: 'fit-content'}}>
+      <Box className={styles.main_container}>
+        <Box className={styles.main_container_child}>
         <Typography variant="h5" fontWeight="medium" gutterBottom>
           🛠️ What I Bring
         </Typography>
@@ -19,7 +20,7 @@ const About = (props) => {
         </List>
       </Box>
 
-      <Box sx={{ mt: 1, background: 'rgba(100,100,100,0.18)',  padding: '5%', borderRadius: '50%', width: 'fit-content'}}>
+      <Box className={styles.main_container_child}>
         <Typography variant="h5" fontWeight="medium" gutterBottom>
           🐍 When I'm Not Coding
         </Typography>
@@ -37,7 +38,7 @@ const About = (props) => {
         </List>
       </Box>
 
-      <Box sx={{ mt: 1, background: 'rgba(100,100,100,0.18)', padding: '5%', borderRadius: '50%'}}>
+      <Box className={styles.main_container_child}>
         <Typography variant="h5" fontWeight="medium" gutterBottom>
           🌟 Why I Do This
         </Typography>
@@ -48,24 +49,9 @@ const About = (props) => {
         <Typography variant="body1">Let’s make something great together. 🙌</Typography>
       </Box>
     </Box>
-      {/* <Typography>Hey there! I’m a web developer with over a year of hands-on experience building full-stack applications using React, Node.js, and MongoDB. I love bringing ideas to life — from wireframing in Figma to coding both the front and back ends of web projects. I've even built and launched websites from the ground up.
-
-Outside of tech, I’m a mom of two, a proud ball python caretaker, and a dedicated volunteer at my children’s school (including a stint running their Squarespace site and coordinating the “Rolling Dropoff” crew). I also log about 40 miles a week on my bike trainer — it’s how I reset and recharge.
-
-I’m always looking for opportunities where I can contribute meaningful work and make an impact. Let’s build something great together!</Typography> */}
-      <Box sx={{position: 'fixed', bottom: '4%', right: '2%', zIndex: '2',width:'7rem',backgroundColor: 'rgba(0,0,0,0.5)',
-  borderRadius: '5rem'} }><img src={ oneYear} alt="1 year real world experience"/></Box> 
-      <Box sx={{
-        position: 'fixed',
-        right: '0%',
-        bottom: '2%',
-      }}>
-        <img src={AnnaImg} alt="Anna Astle" style={{
-          opacity: '0.5',
-          backgroundColor: 'rgba(255,255,255,0.1)',
-          borderRadius: '50%',
-          filter: 'grayscale(1)'
-        }} />
+      <Box className={ styles.experience_container}><img src={ oneYear} alt="1 year real world experience"/></Box> 
+      <Box className={ styles.headshot_container}>
+        <img src={AnnaImg} alt="Anna Astle" className={ styles.headshot} />
         </Box>
 
     </Box>

@@ -3,13 +3,11 @@ import styles from "./Contact.module.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-import { Box, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Box} from "@mui/material";
 
 const Contact = (props) => {
-  const currentDate = new Date();
   return (
-    <Box component="footer" sx={ props.sx}>
+    <Box component="footer" sx={props.sx} className={ props.className}>
       <ul className={styles.contact}>
         <li>
           {" "}
@@ -18,7 +16,7 @@ const Contact = (props) => {
             rel="noreferrer"
             target="_blank"
           >
-            <LinkedInIcon fontSize="large" sx={{ color: "whitesmoke", filter: 'drop-shadow(6px 6px 4px black)' }} />
+            <LinkedInIcon className={ styles.icon} fontSize="large"/>
           </a>
         </li>
 
@@ -29,7 +27,7 @@ const Contact = (props) => {
             rel="noreferrer"
             target="_blank"
           >
-            <GitHubIcon fontSize="large" sx={{ color: "whitesmoke", filter: 'drop-shadow(6px 6px 4px black)' }} />
+            <GitHubIcon fontSize="large" className={ styles.icon} />
           </a>
         </li>
         <li>
@@ -37,26 +35,10 @@ const Contact = (props) => {
             className={styles["contact-email"]}
             href="mailto:annaastle5@gmail.com"
           >
-            <EmailIcon fontSize="large" sx={{ color: "whitesmoke", filter: 'drop-shadow(6px 6px 4px black)' }} />
+            <EmailIcon className={ styles.icon} fontSize="large" />
           </a>
         </li>
       </ul>
-      {/* <a
-        className={styles.viewCode}
-        href="https://github.com/ast19004/portfolio/tree/portfolio-v2"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <b>Portfolio Code</b>
-        <Typography
-          component="span"
-          fontSize="0.82rem"
-          color="#777"
-          sx={{ display: "grid" }}
-        >
-          Anna Astle {currentDate.getFullYear()}
-        </Typography>
-      </a> */}
     </Box>
   );
 };

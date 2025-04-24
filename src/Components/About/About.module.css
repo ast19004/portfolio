@@ -1,0 +1,45 @@
+.main_container{
+    position: relative; 
+    z-index: 1;
+    margin:15% auto;
+    max-width: 800px; 
+    color: whitesmoke;
+}
+
+.main_container_child{
+background: rgba(50,50,50,0.5);  
+padding: 5%; 
+border-radius: 50%; 
+width: fit-content;
+}
+.experience_container{
+    position: fixed; 
+    bottom: 4%; 
+    right: 2%; 
+    z-index: 2;
+    width:7rem;
+    background-color: rgba(0,0,0,0.5);  
+    border-radius: 5rem;
+}
+.headshot_container{
+    position: fixed;
+    right: -20%;
+    bottom: -4%;
+}
+.headshot{
+    opacity: 0.5;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    /* filter: grayscale(1); */
+}
+
+@media(min-width: 42rem){
+    .main_container{
+     margin:2% auto;
+    }
+    .headshot_container{
+        right: 0%;
+        bottom: 0%;
+        margin-right: 4rem;
+    }
+}

@@ -3,7 +3,6 @@ footer {
   justify-content: center;
   gap: 1rem;
   margin-top: 6.3rem;
-  /* background-color: #f1f1f1; */
   padding: 1.9rem;
 }
 
@@ -13,11 +12,7 @@ footer {
   display: flex;
   gap: 1rem;
 }
-.viewCode {
-  display: block;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  color: #777;
-  text-decoration: none;
-  padding: 0.6rem;
+.icon{
+  color: whitesmoke;
+  filter: drop-shadow(6px 6px 4px black);
 }
