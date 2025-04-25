@@ -1,14 +1,11 @@
 import { Box, Typography, List, ListItem} from "@mui/material";
 
 import AnnaImg from '../../assets/images/annaastle.png';
-import oneYear from '../../assets/images/about/oneYear.png';
 import styles from './About.module.css';
+import { useEffect, useState } from "react";
 
-const About = (props) => {
-  return (
-    <Box>
-      <Box className={styles.main_container}>
-        <Box className={styles.main_container_child}>
+const main_container_children = [
+  <Box className={styles.main_container_child} key="1">
         <Typography variant="h5" fontWeight="medium" gutterBottom>
           🛠️ What I Bring
         </Typography>
@@ -18,9 +15,9 @@ const About = (props) => {
           <ListItem sx={{ display: 'list-item' }}>Experience launching live apps</ListItem>
           <ListItem sx={{ display: 'list-item' }}>Passion for purposeful work</ListItem>
         </List>
-      </Box>
+      </Box>,
 
-      <Box className={styles.main_container_child}>
+      <Box className={styles.main_container_child} key="2">
         <Typography variant="h5" fontWeight="medium" gutterBottom>
           🐍 When I'm Not Coding
         </Typography>
@@ -36,9 +33,9 @@ const About = (props) => {
             </List>
           </ListItem>
         </List>
-      </Box>
+      </Box>,
 
-      <Box className={styles.main_container_child}>
+      <Box className={styles.main_container_child} key="3">
         <Typography variant="h5" fontWeight="medium" gutterBottom>
           🌟 Why I Do This
         </Typography>
@@ -48,8 +45,27 @@ const About = (props) => {
         </Typography>
         <Typography variant="body1">Let’s make something great together. 🙌</Typography>
       </Box>
-    </Box>
-      <Box className={ styles.experience_container}><img src={ oneYear} alt="1 year real world experience"/></Box> 
+];
+
+const About = (props) => {
+
+  const [index, setIndex] = useState(0);
+  const interval = 15000;
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % main_container_children.length);
+    }, interval);
+
+    // Cleanup on unmount
+    return () => clearInterval(timer);
+  }, [interval, main_container_children.length]);
+
+  return (
+    <Box>
+      {/* TODO: make a slide of these items for mobile view */}
+      <Box className={styles.main_container}>
+        {main_container_children[index]}
+      </Box>
       <Box className={ styles.headshot_container}>
         <img src={AnnaImg} alt="Anna Astle" className={ styles.headshot} />
         </Box>

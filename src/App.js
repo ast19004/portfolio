@@ -1,11 +1,12 @@
-import "./App.css";
-import Contact from "./Components/Contact/Contact";
-import Home from "./Components/Home/Home";
-import { Routes, Route, Link } from 'react-router-dom';
-import About from './Components/About/About';
-
 import { useState } from "react";
+import { Routes, Route, Link } from 'react-router-dom';
+
+import Home from "./Components/Home/Home";
+import About from './Components/About/About';
 import Logo from "./Components/Layout/Logo/Logo";
+import Footer from './Components/Layout/Footer/Footer'
+
+import "./App.css";
 
 function App() {
   const [toggleActive, setToggleActive] = useState(true);
@@ -28,12 +29,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
       </main>
-      <footer>
-        <span>
-          WEB DEVELOPER
-        </span>
-        <Contact className="contact" />
-      </footer>
+      <Footer/>
     </div>
   );
 }
