@@ -1,4 +1,6 @@
 import { Box, Typography, List, ListItem} from "@mui/material";
+import { AnimatePresence, motion, transform } from 'framer-motion';
+
 
 import AnnaImg from '../../assets/images/annaastle.png';
 import styles from './About.module.css';
@@ -47,24 +49,71 @@ const main_container_children = [
       </Box>
 ];
 
-const About = (props) => {
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset, velocity) => {
+  return Math.abs(offset) * velocity;
+};
 
-  const [index, setIndex] = useState(0);
-  const interval = 15000;
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % main_container_children.length);
-    }, interval);
+const About = ({ intervalValue=15000}) => {
 
-    // Cleanup on unmount
-    return () => clearInterval(timer);
-  }, [interval, main_container_children.length]);
+ const [[index, direction], setIndex] = useState([0, 0]);
+ 
+   const paginate = (newDirection) => {
+     setIndex(([prevIndex]) => {
+       const newIndex = (prevIndex + newDirection + main_container_children.length) % main_container_children.length;
+       return [newIndex, newDirection];
+     });
+   };
+ 
+   // Auto-slide every 4 seconds
+   useEffect(() => {
+     const interval = setInterval(() => paginate(1), intervalValue);
+     return () => clearInterval(interval);
+   }, []);
+const variants = {
+    enter: (dir) => ({
+      x: dir > 0 ? 100 : -100,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (dir) => ({
+      x: dir > 0 ? -100 : 100,
+      opacity: 0,
+    }),
+  };
 
   return (
     <Box>
       {/* TODO: make a slide of these items for mobile view */}
       <Box className={styles.main_container}>
-        {main_container_children[index]}
+           <AnimatePresence custom={direction} mode="wait">
+                  <motion.div
+                    key={index}
+                    custom={direction}
+                    variants={variants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{ duration: 0.6 }}
+                    drag="x"
+                    dragConstraints={{ left: 0, right: 0 }}
+                    dragElastic={0.3}
+                    onDragEnd={(e, { offset, velocity }) => {
+                      const swipe = swipePower(offset.x, velocity.x);
+                      if (swipe < -swipeConfidenceThreshold) {
+                        paginate(1); // swipe left
+                      } else if (swipe > swipeConfidenceThreshold) {
+                        paginate(-1); // swipe right
+                      }
+                    }}
+                    className=""
+                  >
+            {main_container_children[index]}
+             </motion.div>
+          </AnimatePresence>
       </Box>
       <Box className={ styles.headshot_container}>
         <img src={AnnaImg} alt="Anna Astle" className={ styles.headshot} />

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Box, Button, IconButton, Stack } from '@mui/material';
 import { AnimatePresence, motion, transform } from 'framer-motion';
 
+
+import styles from './ProjectCarousel.module.css';
 
 const swipeConfidenceThreshold = 10000;
 const swipePower = (offset, velocity) => {
@@ -10,12 +13,9 @@ const swipePower = (offset, velocity) => {
 const ProjectCarousel = ({ projects, intervalValue = 4000}) => {
   const [[index, direction], setIndex] = useState([0, 0]);
 
-  const paginate = (newDirection) => {
-    setIndex(([prevIndex]) => {
-      const newIndex = (prevIndex + newDirection + projects.length) % projects.length;
-      return [newIndex, newDirection];
-    });
-  };
+  const paginate = (newIndex) => {
+  setIndex([newIndex, newIndex > index ? 1 : -1]);
+};
 
   // Auto-slide every 4 seconds
   useEffect(() => {
@@ -27,17 +27,14 @@ const ProjectCarousel = ({ projects, intervalValue = 4000}) => {
     enter: (dir) => ({
       x: dir > 0 ? 100 : -100,
       opacity: 0,
-      transform: 'transitionX(200vw)',
     }),
     center: {
       x: 0,
       opacity: 1,
-      transform: 'transitionX(0)'
     },
     exit: (dir) => ({
       x: dir > 0 ? -100 : 100,
       opacity: 0,
-      transform: 'transitionX(-200vw)'
     }),
   };
   const { Component, props } = projects[index]; 
@@ -73,14 +70,26 @@ const ProjectCarousel = ({ projects, intervalValue = 4000}) => {
       </div>
 
       {/* Optional navigation buttons */}
-      {/* <div className="">
-        <button onClick={() => paginate(-1)} className="px-4 py-2 bg-gray-200 rounded">
-          Prev
-        </button>
-        <button onClick={() => paginate(1)} className="px-4 py-2 bg-gray-200 rounded">
-          Next
-        </button>
-      </div> */}
+        {/* Pagination dots */}
+      <Stack direction="row" spacing={1} className={ styles.bullet_list}>
+        {projects.map((_, i) => (
+          <IconButton
+            key={i}
+            onClick={() => paginate(i)}
+            size="small"
+            sx={{
+              width: 12,
+              height: 12,
+              borderRadius: '50%',
+              backgroundColor: i === index ? props.themeColor : 'grey.400',
+              '&:hover': {
+                backgroundColor: i === index ? props.themeColor : 'grey.500',
+              },
+              p: 0,
+            }}
+          />
+        ))}
+      </Stack>
     </div>
   );
 };
