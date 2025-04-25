@@ -1,87 +1,136 @@
-@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Antonio:wght@100..700&family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap');
 
-html:not([data-scroll="0"]) {
-  color: red;
+/* html:not([data-scroll="0"]) {
+  color: #0c77ff;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html:not([data-scroll="0"]) header {
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+/* html:not([data-scroll="0"]) header {
   background-color: white;
+} */
+body {
+  font-family:  "Cantata One", serif;
+  color: #585858;
 }
 
-.decorative {
-  font-family: "Uncial Antiqua", cursive;
+.nav_main{
+  position: fixed;
+  top: 2.5%;
+  left: 2.5%;
+  z-index: 5;
 }
+
+.nav_main a{
+  text-decoration: none;
+  color: whitesmoke;
+  opacity: 0.5;
+}
+
+.nav_main a:hover{
+  text-decoration: none;
+  color: whitesmoke;
+  opacity: 1;
+}
+.nav_main a.active{
+  text-decoration: underline rgb(255, 255, 255, 0.6);
+  opacity: 0.7
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.decorative,
+h1,
+h2 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0c77ff;
+}
+
+h1 {
+  margin: 0.5rem 0 1rem 0;
+  line-height: 3.5rem;
+}
+
+main {
+  padding: 2%;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+
 .page-break {
-  opacity: 0.25;
+  opacity: 0;
 }
 .gray {
   color: #555;
 }
 .font-medium {
-  font-size: 36px;
+  font-size: 2.3rem;
 }
 .font-large {
-  font-size: 60px;
+  font-size: 2.8rem;
+}
+.font-xlarge {
+  font-size: 3.8rem;
 }
 
-li {
-  list-style: none;
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
+.moveDownFadeOut {
+  animation: moveDownFadeOut 2s ease-in 5s infinite;
 }
 
-.App {
-  text-align: center;
-  margin: 2%;
+.hidden {
+  display: none;
 }
 
-.App-logo {
-  position: absolute;
-  top: 30vh;
-  left: 35vw;
-  /* height: 40vmin; */
-  font-size: 200px;
-  pointer-events: none;
-  color: rgba(50, 50, 50, 0.15);
-  /* color: rgba(172, 255, 47, 0.45); */
-  /* z-index: -1; */
-}
-@media (min-height: 450px) {
-  .App-logo {
-    font-size: 250px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes moveDownFadeOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(8vh);
+  }
+  99% {
+    transform: translateY(8vh) scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8vh);
   }
 }
-
-@media (min-width: 450px) {
-  .App div:nth-child(n + 3) {
-    max-width: 950px;
-    margin: 0 auto;
-  }
-}
-/* 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

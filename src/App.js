@@ -1,23 +1,35 @@
-import "./App.css";
-import About from "./Components/About/About";
-import Contact from "./Components/Contact/Contact";
-import Header from "./Components/Header";
+import { useState } from "react";
+import { Routes, Route, Link } from 'react-router-dom';
+
 import Home from "./Components/Home/Home";
-import Projects from "./Components/Project/Projects";
-import Technologies from "./Components/Technologies/Technologies";
+import About from './Components/About/About';
+import Logo from "./Components/Layout/Logo/Logo";
+import Footer from './Components/Layout/Footer/Footer'
+
+import "./App.css";
 
 function App() {
+  const [toggleActive, setToggleActive] = useState(true);
+
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <hr className="page-break" id="about"></hr>
-      <About />
-      <Technologies />
-      <hr className="page-break" id="projects"></hr>
-      <Projects />
-      <hr className="page-break" id="contact"></hr>
-      <Contact />
+      <header>
+      {/* Navigation */}
+        <nav className="nav_main">
+          <Link to="/" onClick={() => { setToggleActive(prevState => !prevState)}}  className={ `${toggleActive && "active"}`}>Projects</Link> . {" "}
+          <Link to="/about" onClick={() => { setToggleActive(prevState => !prevState)}} className={ `${!toggleActive && "active"}`}>About</Link>{" "}
+        </nav>
+      <Logo/>
+      </header>
+      
+      {/* Routes */}
+      <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      </main>
+      <Footer/>
     </div>
   );
 }

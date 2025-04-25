@@ -1,0 +1,157 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 12%;
+  left: 2%;
+  margin: 2%;
+  border-radius: 15px;
+  max-width: 80%;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+
+.project-thumbnail {
+  display: block;
+}
+.project-thumbnail img{
+  height: auto;
+  width: 60vw;
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+.project-thumbnail span {
+  position: absolute;
+  top: 12%;
+  right: 12%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  padding: 0.1rem;
+  padding-left: 0.3rem;
+  background:black;
+  border-radius: 10px;
+  opacity: 0.75 !important;
+}
+.project:last-child .project-thumbnail span {
+  /* top: 18%;
+  right: 34%; */
+}
+.project-details {
+  position: fixed;
+  bottom: 10rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* border: 1px solid #0000001a; */
+  /* -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
+  min-width: 15.6rem;
+  max-width: 85%;
+  text-align: left;
+  border-radius: 15px;
+  padding: 2%;
+  font-size: 1.2rem;
+  /* box-shadow: 4px 4px 8px #8888886e; */
+}
+.project-details h2 {
+  margin: 0;
+}
+
+@media (min-aspect-ratio: 3/2),(min-width: 59.7rem) {
+  /* Styles for wide screens */
+  .project{
+    padding: 1%;
+    top: 1%;
+    left: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .project-thumbnail img{
+    height: auto;
+  }
+  .project-details{
+    max-width: 75vw;
+    bottom: 5rem;
+  }
+}
+
+@media (min-width: 59.7rem) {
+  .project {
+    /* position: relative;
+    flex-wrap: nowrap; */
+  }
+  .project:first-child {
+    /* flex-direction: row-reverse; */
+  }
+
+  .project-thumbnail span {
+    /* right: 6%; */
+  }
+  .project:last-child .project-thumbnail span {
+    /* top: 21%;
+    right: 31%; */
+  }
+
+  .project:first-child .project-thumbnail {
+    /* margin-top: 0; */
+  }
+  .project:nth-child(3) .project-thumbnail span {
+    /* top: 10.5%;
+    right: 24%; */
+  }
+  .project:last-child .project-thumbnail span {
+    /* top: 21%;
+    right: 31%; */
+  }
+
+  .project-details {
+    /* max-width: 25.1rem; */
+  }
+  .project-details h2 {
+    font-size: 3rem;
+  }
+
+  .project:nth-child(2) {
+    /* max-width: 62%; */
+  }
+  .project:last-child {
+    /* margin-top: -6.25rem; */
+    /* max-width: 63%; */
+    /* margin-left: 5%; */
+  }
+  .project:nth-child(3) {
+    /* max-width: 76%; */
+    /* margin-bottom: 9.3rem;
+    margin-left: 20%; */
+  }
+  .project:last-child {
+    /* gap: 3.1rem; */
+  }
+  .project:nth-child(2) .project-details {
+    /* position: absolute; */
+    /* top: 14%;
+    right: -60%; */
+  }
+  .project:nth-child(3) .project-details {
+    /* position: absolute; */
+    /* top: 40%;
+    left: -22.5%; */
+  }
+  .project:last-child .project-details {
+    /* position: absolute;
+    top: 25%;
+    right: -40%; */
+  }
+}
+@media (min-width: 81.2rem) {
+  .project:nth-child(2) .project-details {
+    /* top: 25%;
+    right: -48%; */
+  }
+  .project:last-child .project-details {
+    /* top: 34%;
+    right: -30.4%; */
+  }
+}

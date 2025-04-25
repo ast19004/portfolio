@@ -1,0 +1,20 @@
+.button {
+  width: 6.25rem;
+  height: 2.5rem;
+  padding: 0.63rem;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(50, 50, 50, 0.15);
+}
+.rounded {
+  border-radius: 20px;
+}
+.rounded-left {
+  border-radius: 20px 0 0 20px;
+}
+
+.rounded-right {
+  border-radius: 0 20px 20px 0;
+}
