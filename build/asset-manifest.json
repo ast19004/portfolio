@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c430e10.css",
-    "main.js": "/static/js/main.33e43c3b.js",
+    "main.css": "/static/css/main.f786acbd.css",
+    "main.js": "/static/js/main.03b0ad36.js",
     "static/js/496.dc0162e0.chunk.js": "/static/js/496.dc0162e0.chunk.js",
-    "static/media/scootz.jpg": "/static/media/scootz.5e36d0125a0482ddf1b7.jpg",
-    "static/media/readreader.jpg": "/static/media/readreader.c5b366debc40ccdb977f.jpg",
+    "static/media/fijianangels948px.png": "/static/media/fijianangels948px.f1a0db11607129a04074.png",
+    "static/media/readreader1094px.png": "/static/media/readreader1094px.c6dc76c8a751bf8f26ab.png",
+    "static/media/fijianangels900px.png": "/static/media/fijianangels900px.1568bdc7d00f5358534b.png",
+    "static/media/scootz1250px.png": "/static/media/scootz1250px.f0be5796a942d7ff2bbb.png",
+    "static/media/readreader900px.png": "/static/media/readreader900px.ea0a45b98945f3c30a91.png",
+    "static/media/brainstorm1250px.png": "/static/media/brainstorm1250px.7de5aaea088cf21afe48.png",
+    "static/media/scootz900px.png": "/static/media/scootz900px.083f9b06e29753bb0458.png",
     "static/media/annaastle.png": "/static/media/annaastle.ad5ff631fd8cb9688340.png",
-    "static/media/brainstorm.jpg": "/static/media/brainstorm.b5ef2c08f6748e4441bb.jpg",
-    "static/media/fijian_angels.jpg": "/static/media/fijian_angels.fee338b12aea1489aca5.jpg",
-    "static/media/brainstorm-1200px.jpg": "/static/media/brainstorm-1200px.f3b84d25470c4f9fd0bc.jpg",
-    "static/media/scootz-1200px.jpg": "/static/media/scootz-1200px.62b8f796c243a6e9cd33.jpg",
-    "static/media/readreader-850px.jpg": "/static/media/readreader-850px.6be7f6ed117bd6e43a66.jpg",
-    "static/media/marigold.png": "/static/media/marigold.b2b24c51e580f2eff154.png",
-    "static/media/brainstorm-850px.jpg": "/static/media/brainstorm-850px.6be300df7d3e07d25015.jpg",
-    "static/media/scootz-850px.jpg": "/static/media/scootz-850px.782173bc4f8ce9e56b8f.jpg",
-    "static/media/readreader-550px.jpg": "/static/media/readreader-550px.8a5ea34011345771ab71.jpg",
-    "static/media/brainstorm-550px.jpg": "/static/media/brainstorm-550px.bbb5b24f64e39fe172c2.jpg",
-    "static/media/scootz-550px.jpg": "/static/media/scootz-550px.83246d280d3ae0da406a.jpg",
+    "static/media/brainstorm900px.png": "/static/media/brainstorm900px.f3def6a330d25cdf6399.png",
+    "static/media/fijianangels500px.png": "/static/media/fijianangels500px.6604f9576c251498c173.png",
+    "static/media/readreader500px.png": "/static/media/readreader500px.0967cca1ece6d9bd91aa.png",
+    "static/media/scootz500px.png": "/static/media/scootz500px.816da8381d9a0159fb21.png",
+    "static/media/brainstorm500px.png": "/static/media/brainstorm500px.19e1ce5e0dcaefe59d99.png",
+    "static/media/oneYear.png": "/static/media/oneYear.262e0db06a7c4edaf718.png",
     "index.html": "/index.html",
-    "main.5c430e10.css.map": "/static/css/main.5c430e10.css.map",
-    "main.33e43c3b.js.map": "/static/js/main.33e43c3b.js.map",
+    "main.f786acbd.css.map": "/static/css/main.f786acbd.css.map",
+    "main.03b0ad36.js.map": "/static/js/main.03b0ad36.js.map",
     "496.dc0162e0.chunk.js.map": "/static/js/496.dc0162e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c430e10.css",
-    "static/js/main.33e43c3b.js"
+    "static/css/main.f786acbd.css",
+    "static/js/main.03b0ad36.js"
   ]
 }
